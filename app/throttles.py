@@ -11,3 +11,6 @@ class MinAnonRateThrottle(AnonRateThrottle):
 
 class MaxAnonRateThrottle(AnonRateThrottle):
     scope = 'max_anon_request'
+
+class MaxUserRateThrottleMinute(UserRateThrottle):
+    scope = 'max_user_request_minute'

@@ -81,6 +81,7 @@ REST_FRAMEWORK = {
     #     'app.throttles.MaxUserRateThrottle',
     #     'app.throttles.MinAnonRateThrottle',
     #     'app.throttles.MaxAnonRateThrottle',
+    #     'app.throttles.MaxUserRateThrottleMinute',
     # ],
 
     # 'DEFAULT_THROTTLE_RATES': {
@@ -91,6 +92,7 @@ REST_FRAMEWORK = {
         
     #     'min_user_request':'100/day',
     #     'max_user_request':'1000/day',
+    #     'max_user_request_minute' : '15/minute',
         
     # },
 
