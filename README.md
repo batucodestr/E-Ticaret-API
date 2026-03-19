@@ -561,8 +561,3 @@ Frontend'in tam performans gösterebilmesi için gerekli değişiklikler:
 📧 [batuhanyilmaz0011@gmail.com](mailto:batuhanyilmaz0011@gmail.com)
 
 Bu proje **MIT lisansı** altında lisanslanmıştır.
-
-> **Not:** Bu proje eğitim amaçlı geliştirilmiştir. Production ortamında kullanmadan önce güvenlik testlerini yapın ve gerekli optimizasyonları uygulayın.
-=======
-**Not:** Bu proje eğitim amaçlı geliştirilmiştir. Production ortamında kullanmadan önce güvenlik testlerini yapın ve gerekli optimizasyonları uygulayın.
->>>>>>> c6b67018dd772e625a25216421e537e5b894bd51
