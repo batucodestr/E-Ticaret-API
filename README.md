@@ -7,11 +7,11 @@
 ![DRF](https://img.shields.io/badge/DRF-3.16.1-red?style=flat-square)
 ![License](https://img.shields.io/badge/Lisans-MIT-green?style=flat-square)
 =======
-           ## Ana Sayfa
+<h2 align="center">Ana Sayfa</h2>
 
 ![HomePage](homepage.png)
 --------
-           ## Yönetici Paneli
+<h2 align="center">Yönetim Paneli</h2>
  
 ![AdminPanel](adminpanel.png)
 
