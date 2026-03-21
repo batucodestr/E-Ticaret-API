@@ -73,14 +73,20 @@ export default function OrderDetailPage() {
               const img = item.product?.images?.[0]?.image
               return (
                 <div key={item.id} style={{ display: 'flex', alignItems: 'center', gap: 14, padding: '12px 0', borderBottom: '1px solid var(--border)' }}>
-                  <div style={{ width: 56, height: 56, borderRadius: 8, overflow: 'hidden', background: '#f8fafc', flexShrink: 0, border: '1px solid var(--border)' }}>
+                  <div style={{ width: 56, height: 56, overflow: 'hidden', background: '#111', flexShrink: 0, border: '1px solid var(--border)' }}>
                     {img ? <img src={getImgUrl(img)} alt="" style={{ width: '100%', height: '100%', objectFit: 'cover' }} /> : <div style={{ width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--text-muted)' }}><IconBox width={22} height={22} /></div>}
                   </div>
                   <div style={{ flex: 1 }}>
-                    <div style={{ fontWeight: 600, fontSize: 14 }}>{item.product?.name || 'Ürün'}</div>
-                    <div style={{ fontSize: 13, color: 'var(--text-secondary)' }}>× {item.quantity}</div>
+                    {item.product?.slug ? (
+                      <Link to={`/products/${item.product.slug}`} style={{ fontWeight: 700, fontSize: 14, color: '#fff', textDecoration: 'none' }}>
+                        {item.product.name}
+                      </Link>
+                    ) : (
+                      <div style={{ fontWeight: 700, fontSize: 14 }}>{item.product?.name || 'Ürün'}</div>
+                    )}
+                    <div style={{ fontSize: 13, color: 'var(--text-muted)', marginTop: 2 }}>× {item.quantity} adet</div>
                   </div>
-                  <div style={{ fontWeight: 700 }}>{(Number(item.price) * item.quantity).toLocaleString('tr-TR', { minimumFractionDigits: 2 })} ₺</div>
+                  <div style={{ fontWeight: 800, fontSize: 15 }}>{(Number(item.price) * item.quantity).toLocaleString('tr-TR', { minimumFractionDigits: 2 })} ₺</div>
                 </div>
               )
             })}
@@ -93,24 +99,24 @@ export default function OrderDetailPage() {
 
         {/* Addresses */}
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16, marginTop: 16 }}>
-          {order.delivery_address && (
+          {order.addresses?.delivery_address && (
             <div className="card" style={{ padding: 20 }}>
-              <h4 className="font-semibold mb-3" style={{ fontSize: 14 }}>Teslimat Adresi</h4>
+              <h4 style={{ fontSize: 11, fontWeight: 800, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--text-muted)', marginBottom: 12 }}>Teslimat Adresi</h4>
               <div style={{ fontSize: 14, color: 'var(--text-secondary)', lineHeight: 1.7 }}>
-                <div style={{ fontWeight: 600, color: 'var(--text)' }}>{order.delivery_address.fullname}</div>
-                <div>{order.delivery_address.address_line}</div>
-                <div>{order.delivery_address.district}, {order.delivery_address.city?.name}</div>
-                <div>{order.delivery_address.phone}</div>
+                <div style={{ fontWeight: 700, color: '#fff' }}>{order.addresses.delivery_address.fullname}</div>
+                <div>{order.addresses.delivery_address.address_line}</div>
+                <div>{order.addresses.delivery_address.district ? `${order.addresses.delivery_address.district}, ` : ''}{order.addresses.delivery_address.city?.name}</div>
+                <div>{order.addresses.delivery_address.phone}</div>
               </div>
             </div>
           )}
-          {order.billing_address && (
+          {order.addresses?.billing_address && (
             <div className="card" style={{ padding: 20 }}>
-              <h4 className="font-semibold mb-3" style={{ fontSize: 14 }}>Fatura Adresi</h4>
+              <h4 style={{ fontSize: 11, fontWeight: 800, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--text-muted)', marginBottom: 12 }}>Fatura Adresi</h4>
               <div style={{ fontSize: 14, color: 'var(--text-secondary)', lineHeight: 1.7 }}>
-                <div style={{ fontWeight: 600, color: 'var(--text)' }}>{order.billing_address.fullname}</div>
-                <div>{order.billing_address.address_line}</div>
-                <div>{order.billing_address.district}, {order.billing_address.city?.name}</div>
+                <div style={{ fontWeight: 700, color: '#fff' }}>{order.addresses.billing_address.fullname}</div>
+                <div>{order.addresses.billing_address.address_line}</div>
+                <div>{order.addresses.billing_address.district ? `${order.addresses.billing_address.district}, ` : ''}{order.addresses.billing_address.city?.name}</div>
               </div>
             </div>
           )}

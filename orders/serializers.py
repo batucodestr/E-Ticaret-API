@@ -14,7 +14,7 @@ class OrderItemSerializer(serializers.ModelSerializer):
 
 class OrderSerializer(serializers.ModelSerializer):
     user = serializers.StringRelatedField()
-    items = OrderItemSerializer(many=True, read_only=True)
+    items = OrderItemSerializer(many=True, read_only=True, source='order_items')
     addresses = serializers.SerializerMethodField()
 
     class Meta:

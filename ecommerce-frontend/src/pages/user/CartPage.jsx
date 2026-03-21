@@ -49,7 +49,7 @@ export default function CartPage() {
   if (loading) return <Spinner fullPage />
 
   const items = cart?.items || []
-  const total = items.reduce((s, item) => s + Number(item.product.price) * item.quantity, 0)
+  const total = items.reduce((s, item) => s + Number(item.price) * item.quantity, 0)
 
   return (
     <div className="page-wrapper">
@@ -73,45 +73,42 @@ export default function CartPage() {
         ) : (
           <div className="cart-layout">
             <div className="cart-items">
-              {items.map((item) => {
-                const img = item.product.images?.[0]?.image
-                return (
-                  <div key={item.id} className="cart-item card">
-                    <div className="cart-item-img">
-                      {img ? (
-                        <img src={getImgUrl(img)} alt={item.product.name} />
-                      ) : (
-                        <div className="cart-item-noimg"><IconBox width={24} height={24} /></div>
-                      )}
-                    </div>
-                    <div className="cart-item-info">
-                      <Link to={`/products/${item.product.slug}`} className="cart-item-name">
-                        {item.product.name}
-                      </Link>
-                      <div className="cart-item-price">{Number(item.product.price).toLocaleString('tr-TR', { minimumFractionDigits: 2 })} ₺</div>
-                    </div>
-                    <div className="cart-item-controls">
-                      <div className="qty-control">
-                        <button className="qty-btn" onClick={() => handleUpdateQty(item.id, item.quantity - 1)} disabled={updating === item.id || item.quantity <= 1}>−</button>
-                        <span className="qty-value">{updating === item.id ? '...' : item.quantity}</span>
-                        <button className="qty-btn" onClick={() => handleUpdateQty(item.id, item.quantity + 1)} disabled={updating === item.id || item.quantity >= item.product.stock}>+</button>
-                      </div>
-                      <div className="cart-item-subtotal">
-                        {(Number(item.product.price) * item.quantity).toLocaleString('tr-TR', { minimumFractionDigits: 2 })} ₺
-                      </div>
-                      <button className="btn btn-danger btn-sm" onClick={() => handleRemove(item.id)} disabled={updating === item.id}>
-                        <IconTrash width={14} height={14} />
-                      </button>
-                    </div>
+              {items.map((item) => (
+                <div key={item.id} className="cart-item card">
+                  <div className="cart-item-img">
+                    {item.image ? (
+                      <img src={getImgUrl(item.image)} alt={item.name} />
+                    ) : (
+                      <div className="cart-item-noimg"><IconBox width={24} height={24} /></div>
+                    )}
                   </div>
-                )
-              })}
+                  <div className="cart-item-info">
+                    <Link to={`/products/${item.slug}`} className="cart-item-name">
+                      {item.name}
+                    </Link>
+                    <div className="cart-item-price">{Number(item.price).toLocaleString('tr-TR', { minimumFractionDigits: 2 })} ₺</div>
+                  </div>
+                  <div className="cart-item-controls">
+                    <div className="qty-control">
+                      <button className="qty-btn" onClick={() => handleUpdateQty(item.id, item.quantity - 1)} disabled={updating === item.id || item.quantity <= 1}>−</button>
+                      <span className="qty-value">{updating === item.id ? '...' : item.quantity}</span>
+                      <button className="qty-btn" onClick={() => handleUpdateQty(item.id, item.quantity + 1)} disabled={updating === item.id || item.quantity >= item.stock}>+</button>
+                    </div>
+                    <div className="cart-item-subtotal">
+                      {(Number(item.price) * item.quantity).toLocaleString('tr-TR', { minimumFractionDigits: 2 })} ₺
+                    </div>
+                    <button className="btn btn-danger btn-sm" onClick={() => handleRemove(item.id)} disabled={updating === item.id}>
+                      <IconTrash width={14} height={14} />
+                    </button>
+                  </div>
+                </div>
+              ))}
             </div>
 
             <div className="cart-summary card">
               <h3 className="summary-title">Sipariş Özeti</h3>
               <div className="summary-row">
-                <span>Ürünler ({items.length})</span>
+                <span>Ürünler ({items.reduce((s, i) => s + i.quantity, 0)} adet)</span>
                 <span>{total.toLocaleString('tr-TR', { minimumFractionDigits: 2 })} ₺</span>
               </div>
               <div className="summary-row">

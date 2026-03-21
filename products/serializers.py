@@ -7,16 +7,17 @@ from comments.serializers import CommentSerializer
 from categories.serializers import CategorySerializer, CategoryListSerializer
 import re
 
-class OrderProductItemSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = Product
-        fields = ['id','name','slug']
-
 class ProductImageSerializer(serializers.ModelSerializer):
-    
     class Meta:
         model = ProductImage
-        fields = ['id','image','alt_text']
+        fields = ['id', 'image', 'alt_text']
+
+class OrderProductItemSerializer(serializers.ModelSerializer):
+    images = ProductImageSerializer(many=True, read_only=True)
+
+    class Meta:
+        model = Product
+        fields = ['id', 'name', 'slug', 'images']
 
 class ProductImageUploadSerializer(serializers.ModelSerializer):
     image = serializers.ImageField()
