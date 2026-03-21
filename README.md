@@ -8,9 +8,11 @@
 ![License](https://img.shields.io/badge/Lisans-MIT-green?style=flat-square)
 =======
 Ana Sayfa
+
 ![HomePage](homepage.png)
 --------
 Yönetici Paneli
+ 
 ![AdminPanel](adminpanel.png)
 
 ---
