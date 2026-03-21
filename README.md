@@ -8,7 +8,9 @@
 ![License](https://img.shields.io/badge/Lisans-MIT-green?style=flat-square)
 =======
 
-!['örnek_resim'](image.png)
+![HomePage](homepage.png)
+--------
+![AdminPanel](adminpanel.png)
 
 ---
 
