@@ -1,5 +1,7 @@
-from rest_framework import generics, permissions
+from rest_framework import generics, permissions, status
+from rest_framework.response import Response
 from drf_spectacular.utils import extend_schema, extend_schema_view
+from django.db.models import ProtectedError
 from .serializers import AddressListSerializer, CitySerializer, AddressSerializer, AddressDetailsSerializer, AddressSerializer, AddressListSerializer
 from .services import get_user_addresses, set_default_address
 from .models import Address, City
@@ -80,6 +82,15 @@ class AddressDetailUpdateDeleteView(generics.RetrieveUpdateDestroyAPIView):
         address = serializer.save()
         if address.is_default:
             set_default_address(address)
+
+    def destroy(self, request, *args, **kwargs):
+        try:
+            return super().destroy(request, *args, **kwargs)
+        except ProtectedError:
+            return Response(
+                {"detail": "Bu adres bir siparişe bağlı olduğu için silinemiyor."},
+                status=status.HTTP_400_BAD_REQUEST
+            )
 
 @extend_schema_view(
     get=extend_schema(

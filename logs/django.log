@@ -1578,3 +1578,1895 @@ rest_framework.exceptions.Throttled: Request was throttled. Expected available i
 WARNING 2026-02-24 20:07:49,560 log Too Many Requests: /api/products/
 INFO 2026-02-24 20:08:11,520 autoreload C:\Users\batuh\OneDrive\Desktop\django-api\app\settings.py changed, reloading.
 INFO 2026-02-24 20:08:12,252 autoreload Watching for file changes with StatReloader
+INFO 2026-03-21 13:58:32,681 autoreload Watching for file changes with StatReloader
+WARNING 2026-03-21 13:59:29,550 log Not Found: /favicon.ico
+INFO 2026-03-21 13:59:53,712 views User info@batuhanyilmaz.com logged in successfully. (id: 1)
+WARNING 2026-03-21 13:59:53,735 exceptions [AdminOrderListView] InvalidToken: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is invalid', code='token_not_valid')}]}
+Traceback (most recent call last):
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\views.py", line 503, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\views.py", line 420, in initial
+    self.perform_authentication(request)
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\views.py", line 330, in perform_authentication
+    request.user
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\request.py", line 232, in user
+    self._authenticate()
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\request.py", line 385, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\authentication.py", line 49, in authenticate
+    validated_token = self.get_validated_token(raw_token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\authentication.py", line 113, in get_validated_token
+    raise InvalidToken(
+rest_framework_simplejwt.exceptions.InvalidToken: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is invalid', code='token_not_valid')}]}
+WARNING 2026-03-21 13:59:53,736 exceptions [AdminProductListView] InvalidToken: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is invalid', code='token_not_valid')}]}
+Traceback (most recent call last):
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\views.py", line 503, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\views.py", line 420, in initial
+    self.perform_authentication(request)
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\views.py", line 330, in perform_authentication
+    request.user
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\request.py", line 232, in user
+    self._authenticate()
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\request.py", line 385, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\authentication.py", line 49, in authenticate
+    validated_token = self.get_validated_token(raw_token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\authentication.py", line 113, in get_validated_token
+    raise InvalidToken(
+rest_framework_simplejwt.exceptions.InvalidToken: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is invalid', code='token_not_valid')}]}
+WARNING 2026-03-21 13:59:53,774 log Unauthorized: /api/orders/admin
+WARNING 2026-03-21 13:59:53,776 log Unauthorized: /api/products/admin/
+WARNING 2026-03-21 13:59:53,779 exceptions [AdminUserListView] InvalidToken: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is invalid', code='token_not_valid')}]}
+Traceback (most recent call last):
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\views.py", line 503, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\views.py", line 420, in initial
+    self.perform_authentication(request)
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\views.py", line 330, in perform_authentication
+    request.user
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\request.py", line 232, in user
+    self._authenticate()
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\request.py", line 385, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\authentication.py", line 49, in authenticate
+    validated_token = self.get_validated_token(raw_token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\authentication.py", line 113, in get_validated_token
+    raise InvalidToken(
+rest_framework_simplejwt.exceptions.InvalidToken: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is invalid', code='token_not_valid')}]}
+WARNING 2026-03-21 13:59:53,780 exceptions [AdminCommentList] InvalidToken: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is invalid', code='token_not_valid')}]}
+Traceback (most recent call last):
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\views.py", line 503, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\views.py", line 420, in initial
+    self.perform_authentication(request)
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\views.py", line 330, in perform_authentication
+    request.user
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\request.py", line 232, in user
+    self._authenticate()
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\request.py", line 385, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\authentication.py", line 49, in authenticate
+    validated_token = self.get_validated_token(raw_token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\authentication.py", line 113, in get_validated_token
+    raise InvalidToken(
+rest_framework_simplejwt.exceptions.InvalidToken: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is invalid', code='token_not_valid')}]}
+WARNING 2026-03-21 13:59:53,781 log Unauthorized: /api/users/admin/users/
+WARNING 2026-03-21 13:59:53,782 log Unauthorized: /api/comments/admin
+WARNING 2026-03-21 13:59:53,784 exceptions [AdminOrderListView] InvalidToken: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is invalid', code='token_not_valid')}]}
+Traceback (most recent call last):
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\views.py", line 503, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\views.py", line 420, in initial
+    self.perform_authentication(request)
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\views.py", line 330, in perform_authentication
+    request.user
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\request.py", line 232, in user
+    self._authenticate()
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\request.py", line 385, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\authentication.py", line 49, in authenticate
+    validated_token = self.get_validated_token(raw_token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\authentication.py", line 113, in get_validated_token
+    raise InvalidToken(
+rest_framework_simplejwt.exceptions.InvalidToken: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is invalid', code='token_not_valid')}]}
+WARNING 2026-03-21 13:59:53,785 exceptions [AdminProductListView] InvalidToken: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is invalid', code='token_not_valid')}]}
+Traceback (most recent call last):
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\views.py", line 503, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\views.py", line 420, in initial
+    self.perform_authentication(request)
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\views.py", line 330, in perform_authentication
+    request.user
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\request.py", line 232, in user
+    self._authenticate()
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\request.py", line 385, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\authentication.py", line 49, in authenticate
+    validated_token = self.get_validated_token(raw_token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\authentication.py", line 113, in get_validated_token
+    raise InvalidToken(
+rest_framework_simplejwt.exceptions.InvalidToken: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is invalid', code='token_not_valid')}]}
+WARNING 2026-03-21 13:59:53,786 log Unauthorized: /api/orders/admin
+WARNING 2026-03-21 13:59:53,787 log Unauthorized: /api/products/admin/
+WARNING 2026-03-21 13:59:53,792 exceptions [AdminUserListView] InvalidToken: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is invalid', code='token_not_valid')}]}
+Traceback (most recent call last):
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\views.py", line 503, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\views.py", line 420, in initial
+    self.perform_authentication(request)
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\views.py", line 330, in perform_authentication
+    request.user
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\request.py", line 232, in user
+    self._authenticate()
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\request.py", line 385, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\authentication.py", line 49, in authenticate
+    validated_token = self.get_validated_token(raw_token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\authentication.py", line 113, in get_validated_token
+    raise InvalidToken(
+rest_framework_simplejwt.exceptions.InvalidToken: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is invalid', code='token_not_valid')}]}
+WARNING 2026-03-21 13:59:53,793 exceptions [AdminCommentList] InvalidToken: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is invalid', code='token_not_valid')}]}
+Traceback (most recent call last):
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\views.py", line 503, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\views.py", line 420, in initial
+    self.perform_authentication(request)
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\views.py", line 330, in perform_authentication
+    request.user
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\request.py", line 232, in user
+    self._authenticate()
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\request.py", line 385, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\authentication.py", line 49, in authenticate
+    validated_token = self.get_validated_token(raw_token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\authentication.py", line 113, in get_validated_token
+    raise InvalidToken(
+rest_framework_simplejwt.exceptions.InvalidToken: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is invalid', code='token_not_valid')}]}
+WARNING 2026-03-21 13:59:53,795 log Unauthorized: /api/users/admin/users/
+WARNING 2026-03-21 13:59:53,796 log Unauthorized: /api/comments/admin
+WARNING 2026-03-21 13:59:53,804 exceptions [CustomTokenRefreshView] InvalidToken: {'detail': ErrorDetail(string='Token is invalid', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid')}
+Traceback (most recent call last):
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\jwt\api_jws.py", line 293, in _load
+    signing_input, crypto_segment = jwt.rsplit(b".", 1)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: not enough values to unpack (expected 2, got 1)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\backends.py", line 160, in decode
+    return jwt.decode(
+           ^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\jwt\api_jwt.py", line 371, in decode
+    decoded = self.decode_complete(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\jwt\api_jwt.py", line 268, in decode_complete
+    decoded = self._jws.decode_complete(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\jwt\api_jws.py", line 233, in decode_complete
+    payload, signing_input, header, signature = self._load(jwt)
+                                                ^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\jwt\api_jws.py", line 296, in _load
+    raise DecodeError("Not enough segments") from err
+jwt.exceptions.DecodeError: Not enough segments
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\tokens.py", line 65, in __init__
+    self.payload = token_backend.decode(token, verify=verify)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\backends.py", line 177, in decode
+    raise TokenBackendError(_("Token is invalid")) from e
+rest_framework_simplejwt.exceptions.TokenBackendError: Token is invalid
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\views.py", line 46, in post
+    serializer.is_valid(raise_exception=True)
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\serializers.py", line 225, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\serializers.py", line 447, in run_validation
+    value = self.validate(value)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\serializers.py", line 112, in validate
+    refresh = self.token_class(attrs["refresh"])
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\tokens.py", line 69, in __init__
+    raise TokenError(_("Token is invalid")) from e
+rest_framework_simplejwt.exceptions.TokenError: Token is invalid
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\views.py", line 48, in post
+    raise InvalidToken(e.args[0]) from e
+rest_framework_simplejwt.exceptions.InvalidToken: {'detail': ErrorDetail(string='Token is invalid', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid')}
+WARNING 2026-03-21 13:59:53,805 exceptions [CustomTokenRefreshView] InvalidToken: {'detail': ErrorDetail(string='Token is invalid', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid')}
+Traceback (most recent call last):
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\jwt\api_jws.py", line 293, in _load
+    signing_input, crypto_segment = jwt.rsplit(b".", 1)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: not enough values to unpack (expected 2, got 1)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\backends.py", line 160, in decode
+    return jwt.decode(
+           ^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\jwt\api_jwt.py", line 371, in decode
+    decoded = self.decode_complete(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\jwt\api_jwt.py", line 268, in decode_complete
+    decoded = self._jws.decode_complete(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\jwt\api_jws.py", line 233, in decode_complete
+    payload, signing_input, header, signature = self._load(jwt)
+                                                ^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\jwt\api_jws.py", line 296, in _load
+    raise DecodeError("Not enough segments") from err
+jwt.exceptions.DecodeError: Not enough segments
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\tokens.py", line 65, in __init__
+    self.payload = token_backend.decode(token, verify=verify)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\backends.py", line 177, in decode
+    raise TokenBackendError(_("Token is invalid")) from e
+rest_framework_simplejwt.exceptions.TokenBackendError: Token is invalid
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\views.py", line 46, in post
+    serializer.is_valid(raise_exception=True)
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\serializers.py", line 225, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\serializers.py", line 447, in run_validation
+    value = self.validate(value)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\serializers.py", line 112, in validate
+    refresh = self.token_class(attrs["refresh"])
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\tokens.py", line 69, in __init__
+    raise TokenError(_("Token is invalid")) from e
+rest_framework_simplejwt.exceptions.TokenError: Token is invalid
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\views.py", line 48, in post
+    raise InvalidToken(e.args[0]) from e
+rest_framework_simplejwt.exceptions.InvalidToken: {'detail': ErrorDetail(string='Token is invalid', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid')}
+WARNING 2026-03-21 13:59:53,881 log Unauthorized: /api/users/token/refresh
+WARNING 2026-03-21 13:59:53,882 log Unauthorized: /api/users/token/refresh
+WARNING 2026-03-21 13:59:53,884 exceptions [CustomTokenRefreshView] InvalidToken: {'detail': ErrorDetail(string='Token is invalid', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid')}
+Traceback (most recent call last):
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\jwt\api_jws.py", line 293, in _load
+    signing_input, crypto_segment = jwt.rsplit(b".", 1)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: not enough values to unpack (expected 2, got 1)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\backends.py", line 160, in decode
+    return jwt.decode(
+           ^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\jwt\api_jwt.py", line 371, in decode
+    decoded = self.decode_complete(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\jwt\api_jwt.py", line 268, in decode_complete
+    decoded = self._jws.decode_complete(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\jwt\api_jws.py", line 233, in decode_complete
+    payload, signing_input, header, signature = self._load(jwt)
+                                                ^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\jwt\api_jws.py", line 296, in _load
+    raise DecodeError("Not enough segments") from err
+jwt.exceptions.DecodeError: Not enough segments
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\tokens.py", line 65, in __init__
+    self.payload = token_backend.decode(token, verify=verify)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\backends.py", line 177, in decode
+    raise TokenBackendError(_("Token is invalid")) from e
+rest_framework_simplejwt.exceptions.TokenBackendError: Token is invalid
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\views.py", line 46, in post
+    serializer.is_valid(raise_exception=True)
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\serializers.py", line 225, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\serializers.py", line 447, in run_validation
+    value = self.validate(value)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\serializers.py", line 112, in validate
+    refresh = self.token_class(attrs["refresh"])
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\tokens.py", line 69, in __init__
+    raise TokenError(_("Token is invalid")) from e
+rest_framework_simplejwt.exceptions.TokenError: Token is invalid
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\views.py", line 48, in post
+    raise InvalidToken(e.args[0]) from e
+rest_framework_simplejwt.exceptions.InvalidToken: {'detail': ErrorDetail(string='Token is invalid', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid')}
+WARNING 2026-03-21 13:59:53,885 exceptions [CustomTokenRefreshView] InvalidToken: {'detail': ErrorDetail(string='Token is invalid', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid')}
+Traceback (most recent call last):
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\jwt\api_jws.py", line 293, in _load
+    signing_input, crypto_segment = jwt.rsplit(b".", 1)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: not enough values to unpack (expected 2, got 1)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\backends.py", line 160, in decode
+    return jwt.decode(
+           ^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\jwt\api_jwt.py", line 371, in decode
+    decoded = self.decode_complete(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\jwt\api_jwt.py", line 268, in decode_complete
+    decoded = self._jws.decode_complete(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\jwt\api_jws.py", line 233, in decode_complete
+    payload, signing_input, header, signature = self._load(jwt)
+                                                ^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\jwt\api_jws.py", line 296, in _load
+    raise DecodeError("Not enough segments") from err
+jwt.exceptions.DecodeError: Not enough segments
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\tokens.py", line 65, in __init__
+    self.payload = token_backend.decode(token, verify=verify)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\backends.py", line 177, in decode
+    raise TokenBackendError(_("Token is invalid")) from e
+rest_framework_simplejwt.exceptions.TokenBackendError: Token is invalid
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\views.py", line 46, in post
+    serializer.is_valid(raise_exception=True)
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\serializers.py", line 225, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\serializers.py", line 447, in run_validation
+    value = self.validate(value)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\serializers.py", line 112, in validate
+    refresh = self.token_class(attrs["refresh"])
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\tokens.py", line 69, in __init__
+    raise TokenError(_("Token is invalid")) from e
+rest_framework_simplejwt.exceptions.TokenError: Token is invalid
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\views.py", line 48, in post
+    raise InvalidToken(e.args[0]) from e
+rest_framework_simplejwt.exceptions.InvalidToken: {'detail': ErrorDetail(string='Token is invalid', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid')}
+WARNING 2026-03-21 13:59:53,887 log Unauthorized: /api/users/token/refresh
+WARNING 2026-03-21 13:59:53,889 log Unauthorized: /api/users/token/refresh
+WARNING 2026-03-21 13:59:53,893 exceptions [CustomTokenRefreshView] InvalidToken: {'detail': ErrorDetail(string='Token is invalid', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid')}
+Traceback (most recent call last):
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\jwt\api_jws.py", line 293, in _load
+    signing_input, crypto_segment = jwt.rsplit(b".", 1)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: not enough values to unpack (expected 2, got 1)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\backends.py", line 160, in decode
+    return jwt.decode(
+           ^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\jwt\api_jwt.py", line 371, in decode
+    decoded = self.decode_complete(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\jwt\api_jwt.py", line 268, in decode_complete
+    decoded = self._jws.decode_complete(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\jwt\api_jws.py", line 233, in decode_complete
+    payload, signing_input, header, signature = self._load(jwt)
+                                                ^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\jwt\api_jws.py", line 296, in _load
+    raise DecodeError("Not enough segments") from err
+jwt.exceptions.DecodeError: Not enough segments
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\tokens.py", line 65, in __init__
+    self.payload = token_backend.decode(token, verify=verify)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\backends.py", line 177, in decode
+    raise TokenBackendError(_("Token is invalid")) from e
+rest_framework_simplejwt.exceptions.TokenBackendError: Token is invalid
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\views.py", line 46, in post
+    serializer.is_valid(raise_exception=True)
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\serializers.py", line 225, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\serializers.py", line 447, in run_validation
+    value = self.validate(value)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\serializers.py", line 112, in validate
+    refresh = self.token_class(attrs["refresh"])
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\tokens.py", line 69, in __init__
+    raise TokenError(_("Token is invalid")) from e
+rest_framework_simplejwt.exceptions.TokenError: Token is invalid
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\views.py", line 48, in post
+    raise InvalidToken(e.args[0]) from e
+rest_framework_simplejwt.exceptions.InvalidToken: {'detail': ErrorDetail(string='Token is invalid', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid')}
+WARNING 2026-03-21 13:59:53,894 exceptions [CustomTokenRefreshView] InvalidToken: {'detail': ErrorDetail(string='Token is invalid', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid')}
+Traceback (most recent call last):
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\jwt\api_jws.py", line 293, in _load
+    signing_input, crypto_segment = jwt.rsplit(b".", 1)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: not enough values to unpack (expected 2, got 1)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\backends.py", line 160, in decode
+    return jwt.decode(
+           ^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\jwt\api_jwt.py", line 371, in decode
+    decoded = self.decode_complete(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\jwt\api_jwt.py", line 268, in decode_complete
+    decoded = self._jws.decode_complete(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\jwt\api_jws.py", line 233, in decode_complete
+    payload, signing_input, header, signature = self._load(jwt)
+                                                ^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\jwt\api_jws.py", line 296, in _load
+    raise DecodeError("Not enough segments") from err
+jwt.exceptions.DecodeError: Not enough segments
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\tokens.py", line 65, in __init__
+    self.payload = token_backend.decode(token, verify=verify)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\backends.py", line 177, in decode
+    raise TokenBackendError(_("Token is invalid")) from e
+rest_framework_simplejwt.exceptions.TokenBackendError: Token is invalid
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\views.py", line 46, in post
+    serializer.is_valid(raise_exception=True)
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\serializers.py", line 225, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\serializers.py", line 447, in run_validation
+    value = self.validate(value)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\serializers.py", line 112, in validate
+    refresh = self.token_class(attrs["refresh"])
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\tokens.py", line 69, in __init__
+    raise TokenError(_("Token is invalid")) from e
+rest_framework_simplejwt.exceptions.TokenError: Token is invalid
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\views.py", line 48, in post
+    raise InvalidToken(e.args[0]) from e
+rest_framework_simplejwt.exceptions.InvalidToken: {'detail': ErrorDetail(string='Token is invalid', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid')}
+WARNING 2026-03-21 13:59:53,896 log Unauthorized: /api/users/token/refresh
+WARNING 2026-03-21 13:59:53,898 log Unauthorized: /api/users/token/refresh
+WARNING 2026-03-21 13:59:53,901 exceptions [CustomTokenRefreshView] InvalidToken: {'detail': ErrorDetail(string='Token is invalid', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid')}
+Traceback (most recent call last):
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\jwt\api_jws.py", line 293, in _load
+    signing_input, crypto_segment = jwt.rsplit(b".", 1)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: not enough values to unpack (expected 2, got 1)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\backends.py", line 160, in decode
+    return jwt.decode(
+           ^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\jwt\api_jwt.py", line 371, in decode
+    decoded = self.decode_complete(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\jwt\api_jwt.py", line 268, in decode_complete
+    decoded = self._jws.decode_complete(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\jwt\api_jws.py", line 233, in decode_complete
+    payload, signing_input, header, signature = self._load(jwt)
+                                                ^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\jwt\api_jws.py", line 296, in _load
+    raise DecodeError("Not enough segments") from err
+jwt.exceptions.DecodeError: Not enough segments
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\tokens.py", line 65, in __init__
+    self.payload = token_backend.decode(token, verify=verify)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\backends.py", line 177, in decode
+    raise TokenBackendError(_("Token is invalid")) from e
+rest_framework_simplejwt.exceptions.TokenBackendError: Token is invalid
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\views.py", line 46, in post
+    serializer.is_valid(raise_exception=True)
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\serializers.py", line 225, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\serializers.py", line 447, in run_validation
+    value = self.validate(value)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\serializers.py", line 112, in validate
+    refresh = self.token_class(attrs["refresh"])
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\tokens.py", line 69, in __init__
+    raise TokenError(_("Token is invalid")) from e
+rest_framework_simplejwt.exceptions.TokenError: Token is invalid
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\views.py", line 48, in post
+    raise InvalidToken(e.args[0]) from e
+rest_framework_simplejwt.exceptions.InvalidToken: {'detail': ErrorDetail(string='Token is invalid', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid')}
+WARNING 2026-03-21 13:59:53,902 exceptions [CustomTokenRefreshView] InvalidToken: {'detail': ErrorDetail(string='Token is invalid', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid')}
+Traceback (most recent call last):
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\jwt\api_jws.py", line 293, in _load
+    signing_input, crypto_segment = jwt.rsplit(b".", 1)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: not enough values to unpack (expected 2, got 1)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\backends.py", line 160, in decode
+    return jwt.decode(
+           ^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\jwt\api_jwt.py", line 371, in decode
+    decoded = self.decode_complete(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\jwt\api_jwt.py", line 268, in decode_complete
+    decoded = self._jws.decode_complete(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\jwt\api_jws.py", line 233, in decode_complete
+    payload, signing_input, header, signature = self._load(jwt)
+                                                ^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\jwt\api_jws.py", line 296, in _load
+    raise DecodeError("Not enough segments") from err
+jwt.exceptions.DecodeError: Not enough segments
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\tokens.py", line 65, in __init__
+    self.payload = token_backend.decode(token, verify=verify)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\backends.py", line 177, in decode
+    raise TokenBackendError(_("Token is invalid")) from e
+rest_framework_simplejwt.exceptions.TokenBackendError: Token is invalid
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\views.py", line 46, in post
+    serializer.is_valid(raise_exception=True)
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\serializers.py", line 225, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\serializers.py", line 447, in run_validation
+    value = self.validate(value)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\serializers.py", line 112, in validate
+    refresh = self.token_class(attrs["refresh"])
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\tokens.py", line 69, in __init__
+    raise TokenError(_("Token is invalid")) from e
+rest_framework_simplejwt.exceptions.TokenError: Token is invalid
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\views.py", line 48, in post
+    raise InvalidToken(e.args[0]) from e
+rest_framework_simplejwt.exceptions.InvalidToken: {'detail': ErrorDetail(string='Token is invalid', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid')}
+WARNING 2026-03-21 13:59:53,904 log Unauthorized: /api/users/token/refresh
+WARNING 2026-03-21 13:59:53,907 log Unauthorized: /api/users/token/refresh
+INFO 2026-03-21 14:00:07,221 views User info@batuhanyilmaz.com logged in successfully. (id: 1)
+WARNING 2026-03-21 14:00:07,228 exceptions [AdminProductListView] InvalidToken: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is invalid', code='token_not_valid')}]}
+Traceback (most recent call last):
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\views.py", line 503, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\views.py", line 420, in initial
+    self.perform_authentication(request)
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\views.py", line 330, in perform_authentication
+    request.user
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\request.py", line 232, in user
+    self._authenticate()
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\request.py", line 385, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\authentication.py", line 49, in authenticate
+    validated_token = self.get_validated_token(raw_token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\authentication.py", line 113, in get_validated_token
+    raise InvalidToken(
+rest_framework_simplejwt.exceptions.InvalidToken: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is invalid', code='token_not_valid')}]}
+WARNING 2026-03-21 14:00:07,229 exceptions [AdminOrderListView] InvalidToken: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is invalid', code='token_not_valid')}]}
+Traceback (most recent call last):
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\views.py", line 503, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\views.py", line 420, in initial
+    self.perform_authentication(request)
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\views.py", line 330, in perform_authentication
+    request.user
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\request.py", line 232, in user
+    self._authenticate()
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\request.py", line 385, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\authentication.py", line 49, in authenticate
+    validated_token = self.get_validated_token(raw_token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\authentication.py", line 113, in get_validated_token
+    raise InvalidToken(
+rest_framework_simplejwt.exceptions.InvalidToken: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is invalid', code='token_not_valid')}]}
+WARNING 2026-03-21 14:00:07,231 exceptions [AdminUserListView] InvalidToken: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is invalid', code='token_not_valid')}]}
+Traceback (most recent call last):
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\views.py", line 503, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\views.py", line 420, in initial
+    self.perform_authentication(request)
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\views.py", line 330, in perform_authentication
+    request.user
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\request.py", line 232, in user
+    self._authenticate()
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\request.py", line 385, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\authentication.py", line 49, in authenticate
+    validated_token = self.get_validated_token(raw_token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\authentication.py", line 113, in get_validated_token
+    raise InvalidToken(
+rest_framework_simplejwt.exceptions.InvalidToken: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is invalid', code='token_not_valid')}]}
+WARNING 2026-03-21 14:00:07,232 exceptions [AdminCommentList] InvalidToken: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is invalid', code='token_not_valid')}]}
+Traceback (most recent call last):
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\views.py", line 503, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\views.py", line 420, in initial
+    self.perform_authentication(request)
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\views.py", line 330, in perform_authentication
+    request.user
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\request.py", line 232, in user
+    self._authenticate()
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\request.py", line 385, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\authentication.py", line 49, in authenticate
+    validated_token = self.get_validated_token(raw_token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\authentication.py", line 113, in get_validated_token
+    raise InvalidToken(
+rest_framework_simplejwt.exceptions.InvalidToken: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is invalid', code='token_not_valid')}]}
+WARNING 2026-03-21 14:00:07,233 log Unauthorized: /api/products/admin/
+WARNING 2026-03-21 14:00:07,233 log Unauthorized: /api/orders/admin
+WARNING 2026-03-21 14:00:07,234 log Unauthorized: /api/users/admin/users/
+WARNING 2026-03-21 14:00:07,235 log Unauthorized: /api/comments/admin
+WARNING 2026-03-21 14:00:07,238 exceptions [AdminProductListView] InvalidToken: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is invalid', code='token_not_valid')}]}
+Traceback (most recent call last):
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\views.py", line 503, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\views.py", line 420, in initial
+    self.perform_authentication(request)
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\views.py", line 330, in perform_authentication
+    request.user
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\request.py", line 232, in user
+    self._authenticate()
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\request.py", line 385, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\authentication.py", line 49, in authenticate
+    validated_token = self.get_validated_token(raw_token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\authentication.py", line 113, in get_validated_token
+    raise InvalidToken(
+rest_framework_simplejwt.exceptions.InvalidToken: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is invalid', code='token_not_valid')}]}
+WARNING 2026-03-21 14:00:07,240 exceptions [AdminOrderListView] InvalidToken: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is invalid', code='token_not_valid')}]}
+Traceback (most recent call last):
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\views.py", line 503, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\views.py", line 420, in initial
+    self.perform_authentication(request)
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\views.py", line 330, in perform_authentication
+    request.user
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\request.py", line 232, in user
+    self._authenticate()
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\request.py", line 385, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\authentication.py", line 49, in authenticate
+    validated_token = self.get_validated_token(raw_token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\authentication.py", line 113, in get_validated_token
+    raise InvalidToken(
+rest_framework_simplejwt.exceptions.InvalidToken: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is invalid', code='token_not_valid')}]}
+WARNING 2026-03-21 14:00:07,241 exceptions [AdminUserListView] InvalidToken: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is invalid', code='token_not_valid')}]}
+Traceback (most recent call last):
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\views.py", line 503, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\views.py", line 420, in initial
+    self.perform_authentication(request)
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\views.py", line 330, in perform_authentication
+    request.user
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\request.py", line 232, in user
+    self._authenticate()
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\request.py", line 385, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\authentication.py", line 49, in authenticate
+    validated_token = self.get_validated_token(raw_token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\authentication.py", line 113, in get_validated_token
+    raise InvalidToken(
+rest_framework_simplejwt.exceptions.InvalidToken: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is invalid', code='token_not_valid')}]}
+WARNING 2026-03-21 14:00:07,241 exceptions [AdminCommentList] InvalidToken: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is invalid', code='token_not_valid')}]}
+Traceback (most recent call last):
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\views.py", line 503, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\views.py", line 420, in initial
+    self.perform_authentication(request)
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\views.py", line 330, in perform_authentication
+    request.user
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\request.py", line 232, in user
+    self._authenticate()
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\request.py", line 385, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\authentication.py", line 49, in authenticate
+    validated_token = self.get_validated_token(raw_token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\authentication.py", line 113, in get_validated_token
+    raise InvalidToken(
+rest_framework_simplejwt.exceptions.InvalidToken: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is invalid', code='token_not_valid')}]}
+WARNING 2026-03-21 14:00:07,242 exceptions [CustomTokenRefreshView] InvalidToken: {'detail': ErrorDetail(string='Token is invalid', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid')}
+Traceback (most recent call last):
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\jwt\api_jws.py", line 293, in _load
+    signing_input, crypto_segment = jwt.rsplit(b".", 1)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: not enough values to unpack (expected 2, got 1)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\backends.py", line 160, in decode
+    return jwt.decode(
+           ^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\jwt\api_jwt.py", line 371, in decode
+    decoded = self.decode_complete(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\jwt\api_jwt.py", line 268, in decode_complete
+    decoded = self._jws.decode_complete(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\jwt\api_jws.py", line 233, in decode_complete
+    payload, signing_input, header, signature = self._load(jwt)
+                                                ^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\jwt\api_jws.py", line 296, in _load
+    raise DecodeError("Not enough segments") from err
+jwt.exceptions.DecodeError: Not enough segments
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\tokens.py", line 65, in __init__
+    self.payload = token_backend.decode(token, verify=verify)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\backends.py", line 177, in decode
+    raise TokenBackendError(_("Token is invalid")) from e
+rest_framework_simplejwt.exceptions.TokenBackendError: Token is invalid
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\views.py", line 46, in post
+    serializer.is_valid(raise_exception=True)
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\serializers.py", line 225, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\serializers.py", line 447, in run_validation
+    value = self.validate(value)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\serializers.py", line 112, in validate
+    refresh = self.token_class(attrs["refresh"])
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\tokens.py", line 69, in __init__
+    raise TokenError(_("Token is invalid")) from e
+rest_framework_simplejwt.exceptions.TokenError: Token is invalid
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\views.py", line 48, in post
+    raise InvalidToken(e.args[0]) from e
+rest_framework_simplejwt.exceptions.InvalidToken: {'detail': ErrorDetail(string='Token is invalid', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid')}
+WARNING 2026-03-21 14:00:07,243 exceptions [CustomTokenRefreshView] InvalidToken: {'detail': ErrorDetail(string='Token is invalid', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid')}
+Traceback (most recent call last):
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\jwt\api_jws.py", line 293, in _load
+    signing_input, crypto_segment = jwt.rsplit(b".", 1)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: not enough values to unpack (expected 2, got 1)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\backends.py", line 160, in decode
+    return jwt.decode(
+           ^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\jwt\api_jwt.py", line 371, in decode
+    decoded = self.decode_complete(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\jwt\api_jwt.py", line 268, in decode_complete
+    decoded = self._jws.decode_complete(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\jwt\api_jws.py", line 233, in decode_complete
+    payload, signing_input, header, signature = self._load(jwt)
+                                                ^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\jwt\api_jws.py", line 296, in _load
+    raise DecodeError("Not enough segments") from err
+jwt.exceptions.DecodeError: Not enough segments
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\tokens.py", line 65, in __init__
+    self.payload = token_backend.decode(token, verify=verify)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\backends.py", line 177, in decode
+    raise TokenBackendError(_("Token is invalid")) from e
+rest_framework_simplejwt.exceptions.TokenBackendError: Token is invalid
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\views.py", line 46, in post
+    serializer.is_valid(raise_exception=True)
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\serializers.py", line 225, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\serializers.py", line 447, in run_validation
+    value = self.validate(value)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\serializers.py", line 112, in validate
+    refresh = self.token_class(attrs["refresh"])
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\tokens.py", line 69, in __init__
+    raise TokenError(_("Token is invalid")) from e
+rest_framework_simplejwt.exceptions.TokenError: Token is invalid
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\views.py", line 48, in post
+    raise InvalidToken(e.args[0]) from e
+rest_framework_simplejwt.exceptions.InvalidToken: {'detail': ErrorDetail(string='Token is invalid', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid')}
+WARNING 2026-03-21 14:00:07,244 log Unauthorized: /api/products/admin/
+WARNING 2026-03-21 14:00:07,245 log Unauthorized: /api/orders/admin
+WARNING 2026-03-21 14:00:07,246 log Unauthorized: /api/users/admin/users/
+WARNING 2026-03-21 14:00:07,247 log Unauthorized: /api/comments/admin
+WARNING 2026-03-21 14:00:07,249 log Unauthorized: /api/users/token/refresh
+WARNING 2026-03-21 14:00:07,251 log Unauthorized: /api/users/token/refresh
+WARNING 2026-03-21 14:00:07,255 exceptions [CustomTokenRefreshView] InvalidToken: {'detail': ErrorDetail(string='Token is invalid', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid')}
+Traceback (most recent call last):
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\jwt\api_jws.py", line 293, in _load
+    signing_input, crypto_segment = jwt.rsplit(b".", 1)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: not enough values to unpack (expected 2, got 1)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\backends.py", line 160, in decode
+    return jwt.decode(
+           ^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\jwt\api_jwt.py", line 371, in decode
+    decoded = self.decode_complete(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\jwt\api_jwt.py", line 268, in decode_complete
+    decoded = self._jws.decode_complete(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\jwt\api_jws.py", line 233, in decode_complete
+    payload, signing_input, header, signature = self._load(jwt)
+                                                ^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\jwt\api_jws.py", line 296, in _load
+    raise DecodeError("Not enough segments") from err
+jwt.exceptions.DecodeError: Not enough segments
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\tokens.py", line 65, in __init__
+    self.payload = token_backend.decode(token, verify=verify)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\backends.py", line 177, in decode
+    raise TokenBackendError(_("Token is invalid")) from e
+rest_framework_simplejwt.exceptions.TokenBackendError: Token is invalid
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\views.py", line 46, in post
+    serializer.is_valid(raise_exception=True)
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\serializers.py", line 225, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\serializers.py", line 447, in run_validation
+    value = self.validate(value)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\serializers.py", line 112, in validate
+    refresh = self.token_class(attrs["refresh"])
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\tokens.py", line 69, in __init__
+    raise TokenError(_("Token is invalid")) from e
+rest_framework_simplejwt.exceptions.TokenError: Token is invalid
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\views.py", line 48, in post
+    raise InvalidToken(e.args[0]) from e
+rest_framework_simplejwt.exceptions.InvalidToken: {'detail': ErrorDetail(string='Token is invalid', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid')}
+WARNING 2026-03-21 14:00:07,257 exceptions [CustomTokenRefreshView] InvalidToken: {'detail': ErrorDetail(string='Token is invalid', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid')}
+Traceback (most recent call last):
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\jwt\api_jws.py", line 293, in _load
+    signing_input, crypto_segment = jwt.rsplit(b".", 1)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: not enough values to unpack (expected 2, got 1)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\backends.py", line 160, in decode
+    return jwt.decode(
+           ^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\jwt\api_jwt.py", line 371, in decode
+    decoded = self.decode_complete(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\jwt\api_jwt.py", line 268, in decode_complete
+    decoded = self._jws.decode_complete(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\jwt\api_jws.py", line 233, in decode_complete
+    payload, signing_input, header, signature = self._load(jwt)
+                                                ^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\jwt\api_jws.py", line 296, in _load
+    raise DecodeError("Not enough segments") from err
+jwt.exceptions.DecodeError: Not enough segments
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\tokens.py", line 65, in __init__
+    self.payload = token_backend.decode(token, verify=verify)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\backends.py", line 177, in decode
+    raise TokenBackendError(_("Token is invalid")) from e
+rest_framework_simplejwt.exceptions.TokenBackendError: Token is invalid
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\views.py", line 46, in post
+    serializer.is_valid(raise_exception=True)
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\serializers.py", line 225, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\serializers.py", line 447, in run_validation
+    value = self.validate(value)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\serializers.py", line 112, in validate
+    refresh = self.token_class(attrs["refresh"])
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\tokens.py", line 69, in __init__
+    raise TokenError(_("Token is invalid")) from e
+rest_framework_simplejwt.exceptions.TokenError: Token is invalid
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\views.py", line 48, in post
+    raise InvalidToken(e.args[0]) from e
+rest_framework_simplejwt.exceptions.InvalidToken: {'detail': ErrorDetail(string='Token is invalid', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid')}
+WARNING 2026-03-21 14:00:07,259 exceptions [CustomTokenRefreshView] InvalidToken: {'detail': ErrorDetail(string='Token is invalid', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid')}
+Traceback (most recent call last):
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\jwt\api_jws.py", line 293, in _load
+    signing_input, crypto_segment = jwt.rsplit(b".", 1)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: not enough values to unpack (expected 2, got 1)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\backends.py", line 160, in decode
+    return jwt.decode(
+           ^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\jwt\api_jwt.py", line 371, in decode
+    decoded = self.decode_complete(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\jwt\api_jwt.py", line 268, in decode_complete
+    decoded = self._jws.decode_complete(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\jwt\api_jws.py", line 233, in decode_complete
+    payload, signing_input, header, signature = self._load(jwt)
+                                                ^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\jwt\api_jws.py", line 296, in _load
+    raise DecodeError("Not enough segments") from err
+jwt.exceptions.DecodeError: Not enough segments
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\tokens.py", line 65, in __init__
+    self.payload = token_backend.decode(token, verify=verify)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\backends.py", line 177, in decode
+    raise TokenBackendError(_("Token is invalid")) from e
+rest_framework_simplejwt.exceptions.TokenBackendError: Token is invalid
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\views.py", line 46, in post
+    serializer.is_valid(raise_exception=True)
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\serializers.py", line 225, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\serializers.py", line 447, in run_validation
+    value = self.validate(value)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\serializers.py", line 112, in validate
+    refresh = self.token_class(attrs["refresh"])
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\tokens.py", line 69, in __init__
+    raise TokenError(_("Token is invalid")) from e
+rest_framework_simplejwt.exceptions.TokenError: Token is invalid
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\views.py", line 48, in post
+    raise InvalidToken(e.args[0]) from e
+rest_framework_simplejwt.exceptions.InvalidToken: {'detail': ErrorDetail(string='Token is invalid', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid')}
+WARNING 2026-03-21 14:00:07,261 exceptions [CustomTokenRefreshView] InvalidToken: {'detail': ErrorDetail(string='Token is invalid', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid')}
+Traceback (most recent call last):
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\jwt\api_jws.py", line 293, in _load
+    signing_input, crypto_segment = jwt.rsplit(b".", 1)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: not enough values to unpack (expected 2, got 1)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\backends.py", line 160, in decode
+    return jwt.decode(
+           ^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\jwt\api_jwt.py", line 371, in decode
+    decoded = self.decode_complete(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\jwt\api_jwt.py", line 268, in decode_complete
+    decoded = self._jws.decode_complete(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\jwt\api_jws.py", line 233, in decode_complete
+    payload, signing_input, header, signature = self._load(jwt)
+                                                ^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\jwt\api_jws.py", line 296, in _load
+    raise DecodeError("Not enough segments") from err
+jwt.exceptions.DecodeError: Not enough segments
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\tokens.py", line 65, in __init__
+    self.payload = token_backend.decode(token, verify=verify)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\backends.py", line 177, in decode
+    raise TokenBackendError(_("Token is invalid")) from e
+rest_framework_simplejwt.exceptions.TokenBackendError: Token is invalid
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\views.py", line 46, in post
+    serializer.is_valid(raise_exception=True)
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\serializers.py", line 225, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\serializers.py", line 447, in run_validation
+    value = self.validate(value)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\serializers.py", line 112, in validate
+    refresh = self.token_class(attrs["refresh"])
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\tokens.py", line 69, in __init__
+    raise TokenError(_("Token is invalid")) from e
+rest_framework_simplejwt.exceptions.TokenError: Token is invalid
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\views.py", line 48, in post
+    raise InvalidToken(e.args[0]) from e
+rest_framework_simplejwt.exceptions.InvalidToken: {'detail': ErrorDetail(string='Token is invalid', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid')}
+WARNING 2026-03-21 14:00:07,262 exceptions [CustomTokenRefreshView] InvalidToken: {'detail': ErrorDetail(string='Token is invalid', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid')}
+Traceback (most recent call last):
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\jwt\api_jws.py", line 293, in _load
+    signing_input, crypto_segment = jwt.rsplit(b".", 1)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: not enough values to unpack (expected 2, got 1)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\backends.py", line 160, in decode
+    return jwt.decode(
+           ^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\jwt\api_jwt.py", line 371, in decode
+    decoded = self.decode_complete(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\jwt\api_jwt.py", line 268, in decode_complete
+    decoded = self._jws.decode_complete(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\jwt\api_jws.py", line 233, in decode_complete
+    payload, signing_input, header, signature = self._load(jwt)
+                                                ^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\jwt\api_jws.py", line 296, in _load
+    raise DecodeError("Not enough segments") from err
+jwt.exceptions.DecodeError: Not enough segments
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\tokens.py", line 65, in __init__
+    self.payload = token_backend.decode(token, verify=verify)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\backends.py", line 177, in decode
+    raise TokenBackendError(_("Token is invalid")) from e
+rest_framework_simplejwt.exceptions.TokenBackendError: Token is invalid
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\views.py", line 46, in post
+    serializer.is_valid(raise_exception=True)
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\serializers.py", line 225, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\serializers.py", line 447, in run_validation
+    value = self.validate(value)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\serializers.py", line 112, in validate
+    refresh = self.token_class(attrs["refresh"])
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\tokens.py", line 69, in __init__
+    raise TokenError(_("Token is invalid")) from e
+rest_framework_simplejwt.exceptions.TokenError: Token is invalid
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\views.py", line 48, in post
+    raise InvalidToken(e.args[0]) from e
+rest_framework_simplejwt.exceptions.InvalidToken: {'detail': ErrorDetail(string='Token is invalid', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid')}
+WARNING 2026-03-21 14:00:07,263 exceptions [CustomTokenRefreshView] InvalidToken: {'detail': ErrorDetail(string='Token is invalid', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid')}
+Traceback (most recent call last):
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\jwt\api_jws.py", line 293, in _load
+    signing_input, crypto_segment = jwt.rsplit(b".", 1)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: not enough values to unpack (expected 2, got 1)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\backends.py", line 160, in decode
+    return jwt.decode(
+           ^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\jwt\api_jwt.py", line 371, in decode
+    decoded = self.decode_complete(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\jwt\api_jwt.py", line 268, in decode_complete
+    decoded = self._jws.decode_complete(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\jwt\api_jws.py", line 233, in decode_complete
+    payload, signing_input, header, signature = self._load(jwt)
+                                                ^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\jwt\api_jws.py", line 296, in _load
+    raise DecodeError("Not enough segments") from err
+jwt.exceptions.DecodeError: Not enough segments
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\tokens.py", line 65, in __init__
+    self.payload = token_backend.decode(token, verify=verify)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\backends.py", line 177, in decode
+    raise TokenBackendError(_("Token is invalid")) from e
+rest_framework_simplejwt.exceptions.TokenBackendError: Token is invalid
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\views.py", line 46, in post
+    serializer.is_valid(raise_exception=True)
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\serializers.py", line 225, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\serializers.py", line 447, in run_validation
+    value = self.validate(value)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\serializers.py", line 112, in validate
+    refresh = self.token_class(attrs["refresh"])
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\tokens.py", line 69, in __init__
+    raise TokenError(_("Token is invalid")) from e
+rest_framework_simplejwt.exceptions.TokenError: Token is invalid
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\views.py", line 48, in post
+    raise InvalidToken(e.args[0]) from e
+rest_framework_simplejwt.exceptions.InvalidToken: {'detail': ErrorDetail(string='Token is invalid', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid')}
+WARNING 2026-03-21 14:00:07,265 log Unauthorized: /api/users/token/refresh
+WARNING 2026-03-21 14:00:07,267 log Unauthorized: /api/users/token/refresh
+WARNING 2026-03-21 14:00:07,272 log Unauthorized: /api/users/token/refresh
+WARNING 2026-03-21 14:00:07,274 log Unauthorized: /api/users/token/refresh
+WARNING 2026-03-21 14:00:07,276 log Unauthorized: /api/users/token/refresh
+WARNING 2026-03-21 14:00:07,279 log Unauthorized: /api/users/token/refresh
+INFO 2026-03-21 14:10:00,563 autoreload Watching for file changes with StatReloader
+WARNING 2026-03-21 14:10:07,158 log Not Found: /api/users/login/
+WARNING 2026-03-21 14:10:12,504 log Not Found: /api/users/login/
+WARNING 2026-03-21 14:10:33,583 exceptions [LoginView] InvalidToken: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is expired', code='token_not_valid')}]}
+Traceback (most recent call last):
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\views.py", line 503, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\views.py", line 420, in initial
+    self.perform_authentication(request)
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\views.py", line 330, in perform_authentication
+    request.user
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\request.py", line 232, in user
+    self._authenticate()
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\request.py", line 385, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\authentication.py", line 49, in authenticate
+    validated_token = self.get_validated_token(raw_token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\authentication.py", line 113, in get_validated_token
+    raise InvalidToken(
+rest_framework_simplejwt.exceptions.InvalidToken: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is expired', code='token_not_valid')}]}
+WARNING 2026-03-21 14:10:33,585 log Unauthorized: /api/users/login
+WARNING 2026-03-21 14:11:00,483 log Not Found: /favicon.ico
+WARNING 2026-03-21 14:12:00,688 exceptions [LoginView] InvalidToken: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is expired', code='token_not_valid')}]}
+Traceback (most recent call last):
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\views.py", line 503, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\views.py", line 420, in initial
+    self.perform_authentication(request)
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\views.py", line 330, in perform_authentication
+    request.user
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\request.py", line 232, in user
+    self._authenticate()
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\request.py", line 385, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\authentication.py", line 49, in authenticate
+    validated_token = self.get_validated_token(raw_token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\authentication.py", line 113, in get_validated_token
+    raise InvalidToken(
+rest_framework_simplejwt.exceptions.InvalidToken: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is expired', code='token_not_valid')}]}
+WARNING 2026-03-21 14:12:00,690 log Unauthorized: /api/users/login
+WARNING 2026-03-21 14:13:13,045 log Bad Request: /api/users/login
+INFO 2026-03-21 14:13:25,171 views User info@batuhanyilmaz.com logged in successfully. (id: 1)
+ERROR 2026-03-21 14:13:56,278 exceptions [CatalogProductList] Unhandled exception: FieldError: Unsupported lookup 'slug__exact' for ForeignKey or join on the field not permitted.
+Traceback (most recent call last):
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\generics.py", line 203, in get
+    return self.list(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\mixins.py", line 38, in list
+    queryset = self.filter_queryset(self.get_queryset())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\generics.py", line 154, in filter_queryset
+    queryset = backend().filter_queryset(self.request, queryset, self)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\django_filters\rest_framework\backends.py", line 72, in filter_queryset
+    return filterset.qs
+           ^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\django_filters\filterset.py", line 250, in qs
+    qs = self.filter_queryset(qs)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\django_filters\filterset.py", line 233, in filter_queryset
+    queryset = self.filters[name].filter(queryset, value)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\django_filters\filters.py", line 167, in filter
+    qs = self.get_method(qs)(**{lookup: value})
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\django\db\models\query.py", line 1493, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\django\db\models\query.py", line 1511, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\django\db\models\query.py", line 1518, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1646, in add_q
+    clause, _ = self._add_q(q_object, can_reuse)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1678, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1588, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1402, in build_lookup
+    lhs = self.try_transform(lhs, name, lookups)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1458, in try_transform
+    raise FieldError(
+django.core.exceptions.FieldError: Unsupported lookup 'slug__exact' for ForeignKey or join on the field not permitted.
+ERROR 2026-03-21 14:13:56,351 log Internal Server Error: /api/products/
+ERROR 2026-03-21 14:13:57,661 exceptions [CatalogProductList] Unhandled exception: FieldError: Unsupported lookup 'slug__exact' for ForeignKey or join on the field not permitted.
+Traceback (most recent call last):
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\generics.py", line 203, in get
+    return self.list(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\mixins.py", line 38, in list
+    queryset = self.filter_queryset(self.get_queryset())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\generics.py", line 154, in filter_queryset
+    queryset = backend().filter_queryset(self.request, queryset, self)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\django_filters\rest_framework\backends.py", line 72, in filter_queryset
+    return filterset.qs
+           ^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\django_filters\filterset.py", line 250, in qs
+    qs = self.filter_queryset(qs)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\django_filters\filterset.py", line 233, in filter_queryset
+    queryset = self.filters[name].filter(queryset, value)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\django_filters\filters.py", line 167, in filter
+    qs = self.get_method(qs)(**{lookup: value})
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\django\db\models\query.py", line 1493, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\django\db\models\query.py", line 1511, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\django\db\models\query.py", line 1518, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1646, in add_q
+    clause, _ = self._add_q(q_object, can_reuse)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1678, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1588, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1402, in build_lookup
+    lhs = self.try_transform(lhs, name, lookups)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1458, in try_transform
+    raise FieldError(
+django.core.exceptions.FieldError: Unsupported lookup 'slug__exact' for ForeignKey or join on the field not permitted.
+ERROR 2026-03-21 14:13:57,664 log Internal Server Error: /api/products/
+ERROR 2026-03-21 14:13:59,304 exceptions [CatalogProductList] Unhandled exception: FieldError: Unsupported lookup 'slug__exact' for ForeignKey or join on the field not permitted.
+Traceback (most recent call last):
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\generics.py", line 203, in get
+    return self.list(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\mixins.py", line 38, in list
+    queryset = self.filter_queryset(self.get_queryset())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\generics.py", line 154, in filter_queryset
+    queryset = backend().filter_queryset(self.request, queryset, self)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\django_filters\rest_framework\backends.py", line 72, in filter_queryset
+    return filterset.qs
+           ^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\django_filters\filterset.py", line 250, in qs
+    qs = self.filter_queryset(qs)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\django_filters\filterset.py", line 233, in filter_queryset
+    queryset = self.filters[name].filter(queryset, value)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\django_filters\filters.py", line 167, in filter
+    qs = self.get_method(qs)(**{lookup: value})
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\django\db\models\query.py", line 1493, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\django\db\models\query.py", line 1511, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\django\db\models\query.py", line 1518, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1646, in add_q
+    clause, _ = self._add_q(q_object, can_reuse)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1678, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1588, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1402, in build_lookup
+    lhs = self.try_transform(lhs, name, lookups)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1458, in try_transform
+    raise FieldError(
+django.core.exceptions.FieldError: Unsupported lookup 'slug__exact' for ForeignKey or join on the field not permitted.
+ERROR 2026-03-21 14:13:59,307 log Internal Server Error: /api/products/
+INFO 2026-03-21 14:14:13,614 views User info@batuhanyilmaz.com logged in successfully. (id: 1)
+WARNING 2026-03-21 14:14:13,672 exceptions [AdminProductListView] InvalidToken: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is invalid', code='token_not_valid')}]}
+Traceback (most recent call last):
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\views.py", line 503, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\views.py", line 420, in initial
+    self.perform_authentication(request)
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\views.py", line 330, in perform_authentication
+    request.user
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\request.py", line 232, in user
+    self._authenticate()
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\request.py", line 385, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\authentication.py", line 49, in authenticate
+    validated_token = self.get_validated_token(raw_token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\authentication.py", line 113, in get_validated_token
+    raise InvalidToken(
+rest_framework_simplejwt.exceptions.InvalidToken: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is invalid', code='token_not_valid')}]}
+WARNING 2026-03-21 14:14:13,673 exceptions [AdminOrderListView] InvalidToken: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is invalid', code='token_not_valid')}]}
+Traceback (most recent call last):
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\views.py", line 503, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\views.py", line 420, in initial
+    self.perform_authentication(request)
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\views.py", line 330, in perform_authentication
+    request.user
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\request.py", line 232, in user
+    self._authenticate()
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\request.py", line 385, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\authentication.py", line 49, in authenticate
+    validated_token = self.get_validated_token(raw_token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\authentication.py", line 113, in get_validated_token
+    raise InvalidToken(
+rest_framework_simplejwt.exceptions.InvalidToken: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is invalid', code='token_not_valid')}]}
+WARNING 2026-03-21 14:14:13,674 exceptions [AdminCommentList] InvalidToken: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is invalid', code='token_not_valid')}]}
+Traceback (most recent call last):
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\views.py", line 503, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\views.py", line 420, in initial
+    self.perform_authentication(request)
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\views.py", line 330, in perform_authentication
+    request.user
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\request.py", line 232, in user
+    self._authenticate()
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\request.py", line 385, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\authentication.py", line 49, in authenticate
+    validated_token = self.get_validated_token(raw_token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\authentication.py", line 113, in get_validated_token
+    raise InvalidToken(
+rest_framework_simplejwt.exceptions.InvalidToken: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is invalid', code='token_not_valid')}]}
+WARNING 2026-03-21 14:14:13,676 exceptions [AdminUserListView] InvalidToken: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is invalid', code='token_not_valid')}]}
+Traceback (most recent call last):
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\views.py", line 503, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\views.py", line 420, in initial
+    self.perform_authentication(request)
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\views.py", line 330, in perform_authentication
+    request.user
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\request.py", line 232, in user
+    self._authenticate()
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\request.py", line 385, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\authentication.py", line 49, in authenticate
+    validated_token = self.get_validated_token(raw_token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\authentication.py", line 113, in get_validated_token
+    raise InvalidToken(
+rest_framework_simplejwt.exceptions.InvalidToken: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is invalid', code='token_not_valid')}]}
+WARNING 2026-03-21 14:14:13,677 log Unauthorized: /api/products/admin/
+WARNING 2026-03-21 14:14:13,678 log Unauthorized: /api/orders/admin
+WARNING 2026-03-21 14:14:13,680 log Unauthorized: /api/comments/admin
+WARNING 2026-03-21 14:14:13,681 log Unauthorized: /api/users/admin/users/
+WARNING 2026-03-21 14:14:13,684 exceptions [AdminProductListView] InvalidToken: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is invalid', code='token_not_valid')}]}
+Traceback (most recent call last):
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\views.py", line 503, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\views.py", line 420, in initial
+    self.perform_authentication(request)
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\views.py", line 330, in perform_authentication
+    request.user
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\request.py", line 232, in user
+    self._authenticate()
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\request.py", line 385, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\authentication.py", line 49, in authenticate
+    validated_token = self.get_validated_token(raw_token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\authentication.py", line 113, in get_validated_token
+    raise InvalidToken(
+rest_framework_simplejwt.exceptions.InvalidToken: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is invalid', code='token_not_valid')}]}
+WARNING 2026-03-21 14:14:13,685 exceptions [AdminOrderListView] InvalidToken: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is invalid', code='token_not_valid')}]}
+Traceback (most recent call last):
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\views.py", line 503, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\views.py", line 420, in initial
+    self.perform_authentication(request)
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\views.py", line 330, in perform_authentication
+    request.user
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\request.py", line 232, in user
+    self._authenticate()
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\request.py", line 385, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\authentication.py", line 49, in authenticate
+    validated_token = self.get_validated_token(raw_token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\authentication.py", line 113, in get_validated_token
+    raise InvalidToken(
+rest_framework_simplejwt.exceptions.InvalidToken: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is invalid', code='token_not_valid')}]}
+WARNING 2026-03-21 14:14:13,687 exceptions [AdminUserListView] InvalidToken: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is invalid', code='token_not_valid')}]}
+Traceback (most recent call last):
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\views.py", line 503, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\views.py", line 420, in initial
+    self.perform_authentication(request)
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\views.py", line 330, in perform_authentication
+    request.user
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\request.py", line 232, in user
+    self._authenticate()
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\request.py", line 385, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\authentication.py", line 49, in authenticate
+    validated_token = self.get_validated_token(raw_token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\authentication.py", line 113, in get_validated_token
+    raise InvalidToken(
+rest_framework_simplejwt.exceptions.InvalidToken: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is invalid', code='token_not_valid')}]}
+WARNING 2026-03-21 14:14:13,688 exceptions [AdminCommentList] InvalidToken: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is invalid', code='token_not_valid')}]}
+Traceback (most recent call last):
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\views.py", line 503, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\views.py", line 420, in initial
+    self.perform_authentication(request)
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\views.py", line 330, in perform_authentication
+    request.user
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\request.py", line 232, in user
+    self._authenticate()
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\request.py", line 385, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\authentication.py", line 49, in authenticate
+    validated_token = self.get_validated_token(raw_token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\authentication.py", line 113, in get_validated_token
+    raise InvalidToken(
+rest_framework_simplejwt.exceptions.InvalidToken: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is invalid', code='token_not_valid')}]}
+WARNING 2026-03-21 14:14:13,690 log Unauthorized: /api/products/admin/
+WARNING 2026-03-21 14:14:13,692 log Unauthorized: /api/orders/admin
+WARNING 2026-03-21 14:14:13,695 exceptions [CustomTokenRefreshView] InvalidToken: {'detail': ErrorDetail(string='Token is invalid', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid')}
+Traceback (most recent call last):
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\jwt\api_jws.py", line 293, in _load
+    signing_input, crypto_segment = jwt.rsplit(b".", 1)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: not enough values to unpack (expected 2, got 1)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\backends.py", line 160, in decode
+    return jwt.decode(
+           ^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\jwt\api_jwt.py", line 371, in decode
+    decoded = self.decode_complete(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\jwt\api_jwt.py", line 268, in decode_complete
+    decoded = self._jws.decode_complete(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\jwt\api_jws.py", line 233, in decode_complete
+    payload, signing_input, header, signature = self._load(jwt)
+                                                ^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\jwt\api_jws.py", line 296, in _load
+    raise DecodeError("Not enough segments") from err
+jwt.exceptions.DecodeError: Not enough segments
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\tokens.py", line 65, in __init__
+    self.payload = token_backend.decode(token, verify=verify)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\backends.py", line 177, in decode
+    raise TokenBackendError(_("Token is invalid")) from e
+rest_framework_simplejwt.exceptions.TokenBackendError: Token is invalid
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\views.py", line 46, in post
+    serializer.is_valid(raise_exception=True)
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\serializers.py", line 225, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\serializers.py", line 447, in run_validation
+    value = self.validate(value)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\serializers.py", line 112, in validate
+    refresh = self.token_class(attrs["refresh"])
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\tokens.py", line 69, in __init__
+    raise TokenError(_("Token is invalid")) from e
+rest_framework_simplejwt.exceptions.TokenError: Token is invalid
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework_simplejwt\views.py", line 48, in post
+    raise InvalidToken(e.args[0]) from e
+rest_framework_simplejwt.exceptions.InvalidToken: {'detail': ErrorDetail(string='Token is invalid', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid')}
+WARNING 2026-03-21 14:14:13,696 log Unauthorized: /api/users/admin/users/
+WARNING 2026-03-21 14:14:13,697 log Unauthorized: /api/comments/admin
+WARNING 2026-03-21 14:14:13,705 log Unauthorized: /api/users/token/refresh
+INFO 2026-03-21 14:30:55,559 autoreload Watching for file changes with StatReloader
+INFO 2026-03-21 14:31:25,386 views User info@batuhanyilmaz.com logged in successfully. (id: 1)
+INFO 2026-03-21 14:47:03,553 autoreload Watching for file changes with StatReloader
+ERROR 2026-03-21 14:56:57,796 exceptions [AddressDetailUpdateDeleteView] Unhandled exception: ProtectedError: ("Cannot delete some instances of model 'Address' because they are referenced through protected foreign keys: 'Order.delivery_address', 'Order.billing_address'.", {<Order: Order #1 by info>, <Order: Order #2 by info>, <Order: Order #3 by info>, <Order: Order #4 by info>, <Order: Order #5 by info>, <Order: Order #6 by info>, <Order: Order #7 by info>, <Order: Order #8 by info>, <Order: Order #9 by info>, <Order: Order #10 by info>, <Order: Order #11 by info>, <Order: Order #12 by info>, <Order: Order #13 by info>, <Order: Order #14 by info>})
+Traceback (most recent call last):
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\drf_spectacular\drainage.py", line 207, in wrapped_method
+    return method(self, request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\generics.py", line 295, in delete
+    return self.destroy(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\mixins.py", line 91, in destroy
+    self.perform_destroy(instance)
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\mixins.py", line 95, in perform_destroy
+    instance.delete()
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\django\db\models\base.py", line 1280, in delete
+    collector.collect([self], keep_parents=keep_parents)
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\django\db\models\deletion.py", line 350, in collect
+    raise ProtectedError(
+django.db.models.deletion.ProtectedError: ("Cannot delete some instances of model 'Address' because they are referenced through protected foreign keys: 'Order.delivery_address', 'Order.billing_address'.", {<Order: Order #1 by info>, <Order: Order #2 by info>, <Order: Order #3 by info>, <Order: Order #4 by info>, <Order: Order #5 by info>, <Order: Order #6 by info>, <Order: Order #7 by info>, <Order: Order #8 by info>, <Order: Order #9 by info>, <Order: Order #10 by info>, <Order: Order #11 by info>, <Order: Order #12 by info>, <Order: Order #13 by info>, <Order: Order #14 by info>})
+ERROR 2026-03-21 14:56:57,843 log Internal Server Error: /api/addresses/1
+ERROR 2026-03-21 14:57:01,838 exceptions [AddressDetailUpdateDeleteView] Unhandled exception: ProtectedError: ("Cannot delete some instances of model 'Address' because they are referenced through protected foreign keys: 'Order.delivery_address', 'Order.billing_address'.", {<Order: Order #1 by info>, <Order: Order #2 by info>, <Order: Order #3 by info>, <Order: Order #4 by info>, <Order: Order #5 by info>, <Order: Order #6 by info>, <Order: Order #7 by info>, <Order: Order #8 by info>, <Order: Order #9 by info>, <Order: Order #10 by info>, <Order: Order #11 by info>, <Order: Order #12 by info>, <Order: Order #13 by info>, <Order: Order #14 by info>})
+Traceback (most recent call last):
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\drf_spectacular\drainage.py", line 207, in wrapped_method
+    return method(self, request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\generics.py", line 295, in delete
+    return self.destroy(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\mixins.py", line 91, in destroy
+    self.perform_destroy(instance)
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\mixins.py", line 95, in perform_destroy
+    instance.delete()
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\django\db\models\base.py", line 1280, in delete
+    collector.collect([self], keep_parents=keep_parents)
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\django\db\models\deletion.py", line 350, in collect
+    raise ProtectedError(
+django.db.models.deletion.ProtectedError: ("Cannot delete some instances of model 'Address' because they are referenced through protected foreign keys: 'Order.delivery_address', 'Order.billing_address'.", {<Order: Order #1 by info>, <Order: Order #2 by info>, <Order: Order #3 by info>, <Order: Order #4 by info>, <Order: Order #5 by info>, <Order: Order #6 by info>, <Order: Order #7 by info>, <Order: Order #8 by info>, <Order: Order #9 by info>, <Order: Order #10 by info>, <Order: Order #11 by info>, <Order: Order #12 by info>, <Order: Order #13 by info>, <Order: Order #14 by info>})
+ERROR 2026-03-21 14:57:01,840 log Internal Server Error: /api/addresses/1
+WARNING 2026-03-21 14:57:15,789 log Bad Request: /api/categories/admin/2/
+WARNING 2026-03-21 14:57:19,802 log Bad Request: /api/categories/admin/2/
+WARNING 2026-03-21 14:57:47,716 exceptions [AdminCategoryListCreateView] ValidationError: {'icon': [ErrorDetail(string='This field is required.', code='required')], 'slug': [ErrorDetail(string='This field is required.', code='required')]}
+Traceback (most recent call last):
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\drf_spectacular\drainage.py", line 207, in wrapped_method
+    return method(self, request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\generics.py", line 246, in post
+    return self.create(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\mixins.py", line 18, in create
+    serializer.is_valid(raise_exception=True)
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\serializers.py", line 233, in is_valid
+    raise ValidationError(self.errors)
+rest_framework.exceptions.ValidationError: {'icon': [ErrorDetail(string='This field is required.', code='required')], 'slug': [ErrorDetail(string='This field is required.', code='required')]}
+WARNING 2026-03-21 14:57:47,717 log Bad Request: /api/categories/admin/
+WARNING 2026-03-21 15:00:13,912 exceptions [AddressListCreateView] ValidationError: {'city': [ErrorDetail(string='Object with name=1 does not exist.', code='does_not_exist')]}
+Traceback (most recent call last):
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\drf_spectacular\drainage.py", line 207, in wrapped_method
+    return method(self, request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\generics.py", line 246, in post
+    return self.create(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\mixins.py", line 18, in create
+    serializer.is_valid(raise_exception=True)
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\serializers.py", line 233, in is_valid
+    raise ValidationError(self.errors)
+rest_framework.exceptions.ValidationError: {'city': [ErrorDetail(string='Object with name=1 does not exist.', code='does_not_exist')]}
+WARNING 2026-03-21 15:00:13,914 log Bad Request: /api/addresses/
+ERROR 2026-03-21 15:00:19,178 exceptions [AddressDetailUpdateDeleteView] Unhandled exception: ProtectedError: ("Cannot delete some instances of model 'Address' because they are referenced through protected foreign keys: 'Order.delivery_address', 'Order.billing_address'.", {<Order: Order #1 by info>, <Order: Order #2 by info>, <Order: Order #3 by info>, <Order: Order #4 by info>, <Order: Order #5 by info>, <Order: Order #6 by info>, <Order: Order #7 by info>, <Order: Order #8 by info>, <Order: Order #9 by info>, <Order: Order #10 by info>, <Order: Order #11 by info>, <Order: Order #12 by info>, <Order: Order #13 by info>, <Order: Order #14 by info>})
+Traceback (most recent call last):
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\drf_spectacular\drainage.py", line 207, in wrapped_method
+    return method(self, request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\generics.py", line 295, in delete
+    return self.destroy(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\mixins.py", line 91, in destroy
+    self.perform_destroy(instance)
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\mixins.py", line 95, in perform_destroy
+    instance.delete()
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\django\db\models\base.py", line 1280, in delete
+    collector.collect([self], keep_parents=keep_parents)
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\django\db\models\deletion.py", line 350, in collect
+    raise ProtectedError(
+django.db.models.deletion.ProtectedError: ("Cannot delete some instances of model 'Address' because they are referenced through protected foreign keys: 'Order.delivery_address', 'Order.billing_address'.", {<Order: Order #1 by info>, <Order: Order #2 by info>, <Order: Order #3 by info>, <Order: Order #4 by info>, <Order: Order #5 by info>, <Order: Order #6 by info>, <Order: Order #7 by info>, <Order: Order #8 by info>, <Order: Order #9 by info>, <Order: Order #10 by info>, <Order: Order #11 by info>, <Order: Order #12 by info>, <Order: Order #13 by info>, <Order: Order #14 by info>})
+ERROR 2026-03-21 15:00:19,179 log Internal Server Error: /api/addresses/1
+ERROR 2026-03-21 15:00:59,689 exceptions [AddressDetailUpdateDeleteView] Unhandled exception: ProtectedError: ("Cannot delete some instances of model 'Address' because they are referenced through protected foreign keys: 'Order.delivery_address', 'Order.billing_address'.", {<Order: Order #1 by info>, <Order: Order #2 by info>, <Order: Order #3 by info>, <Order: Order #4 by info>, <Order: Order #5 by info>, <Order: Order #6 by info>, <Order: Order #7 by info>, <Order: Order #8 by info>, <Order: Order #9 by info>, <Order: Order #10 by info>, <Order: Order #11 by info>, <Order: Order #12 by info>, <Order: Order #13 by info>, <Order: Order #14 by info>})
+Traceback (most recent call last):
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\drf_spectacular\drainage.py", line 207, in wrapped_method
+    return method(self, request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\generics.py", line 295, in delete
+    return self.destroy(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\mixins.py", line 91, in destroy
+    self.perform_destroy(instance)
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\rest_framework\mixins.py", line 95, in perform_destroy
+    instance.delete()
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\django\db\models\base.py", line 1280, in delete
+    collector.collect([self], keep_parents=keep_parents)
+  File "C:\Users\batuh\OneDrive\Desktop\django-api\.venv\Lib\site-packages\django\db\models\deletion.py", line 350, in collect
+    raise ProtectedError(
+django.db.models.deletion.ProtectedError: ("Cannot delete some instances of model 'Address' because they are referenced through protected foreign keys: 'Order.delivery_address', 'Order.billing_address'.", {<Order: Order #1 by info>, <Order: Order #2 by info>, <Order: Order #3 by info>, <Order: Order #4 by info>, <Order: Order #5 by info>, <Order: Order #6 by info>, <Order: Order #7 by info>, <Order: Order #8 by info>, <Order: Order #9 by info>, <Order: Order #10 by info>, <Order: Order #11 by info>, <Order: Order #12 by info>, <Order: Order #13 by info>, <Order: Order #14 by info>})
+ERROR 2026-03-21 15:00:59,691 log Internal Server Error: /api/addresses/1
+WARNING 2026-03-21 15:01:21,986 log Bad Request: /api/categories/admin/2/
+INFO 2026-03-21 15:16:18,075 autoreload Watching for file changes with StatReloader
+INFO 2026-03-21 15:22:43,190 autoreload Watching for file changes with StatReloader

@@ -172,6 +172,7 @@ Canlı Swagger dokümantasyonuna tarayıcıdan erişebilirsiniz:
 
 ---
 
+<<<<<<< HEAD
 ## 📁 Proje Yapısı
 
 ```
@@ -213,6 +214,8 @@ Her uygulama klasörü standart olarak şu dosyaları içerir:
 
 ---
 
+=======
+>>>>>>> c6b67018dd772e625a25216421e537e5b894bd51
 ## 🔧 Kullanım
 
 ### Kimlik Doğrulama
@@ -547,6 +550,7 @@ Frontend'in tam performans gösterebilmesi için gerekli değişiklikler:
 
 ---
 
+<<<<<<< HEAD
 ## 🤝 Katkıda Bulunma
 
 1. Bu repoyu **fork** yapın
@@ -564,3 +568,6 @@ Frontend'in tam performans gösterebilmesi için gerekli değişiklikler:
 Bu proje **MIT lisansı** altında lisanslanmıştır.
 
 > **Not:** Bu proje eğitim amaçlı geliştirilmiştir. Production ortamında kullanmadan önce güvenlik testlerini yapın ve gerekli optimizasyonları uygulayın.
+=======
+**Not:** Bu proje eğitim amaçlı geliştirilmiştir. Production ortamında kullanmadan önce güvenlik testlerini yapın ve gerekli optimizasyonları uygulayın.
+>>>>>>> c6b67018dd772e625a25216421e537e5b894bd51
