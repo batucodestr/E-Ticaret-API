@@ -6,6 +6,7 @@
 ![Django](https://img.shields.io/badge/Django-5.2.3-092E20?style=flat-square&logo=django&logoColor=white)
 ![DRF](https://img.shields.io/badge/DRF-3.16.1-red?style=flat-square)
 ![License](https://img.shields.io/badge/Lisans-MIT-green?style=flat-square)
+=======
 
 !['örnek_resim'](image.png)
 
@@ -172,7 +173,6 @@ Canlı Swagger dokümantasyonuna tarayıcıdan erişebilirsiniz:
 
 ---
 
-<<<<<<< HEAD
 ## 📁 Proje Yapısı
 
 ```
@@ -215,7 +215,6 @@ Her uygulama klasörü standart olarak şu dosyaları içerir:
 ---
 
 =======
->>>>>>> c6b67018dd772e625a25216421e537e5b894bd51
 ## 🔧 Kullanım
 
 ### Kimlik Doğrulama
@@ -550,7 +549,6 @@ Frontend'in tam performans gösterebilmesi için gerekli değişiklikler:
 
 ---
 
-<<<<<<< HEAD
 ## 🤝 Katkıda Bulunma
 
 1. Bu repoyu **fork** yapın
@@ -566,8 +564,3 @@ Frontend'in tam performans gösterebilmesi için gerekli değişiklikler:
 📧 [batuhanyilmaz0011@gmail.com](mailto:batuhanyilmaz0011@gmail.com)
 
 Bu proje **MIT lisansı** altında lisanslanmıştır.
-
-> **Not:** Bu proje eğitim amaçlı geliştirilmiştir. Production ortamında kullanmadan önce güvenlik testlerini yapın ve gerekli optimizasyonları uygulayın.
-=======
-**Not:** Bu proje eğitim amaçlı geliştirilmiştir. Production ortamında kullanmadan önce güvenlik testlerini yapın ve gerekli optimizasyonları uygulayın.
->>>>>>> c6b67018dd772e625a25216421e537e5b894bd51
