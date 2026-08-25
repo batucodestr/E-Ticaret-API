@@ -1,19 +1,11 @@
 # 🛍️ Django E-Ticaret REST API
 
-> Modern, ölçeklenebilir ve güvenli bir e-ticaret backend sistemi — Django REST Framework ile geliştirilmiştir.
+> Django REST Framework ile geliştirilmiş, saf REST API mimarisine sahip bir e-ticaret backend sistemi.
 
 ![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?style=flat-square&logo=python&logoColor=white)
 ![Django](https://img.shields.io/badge/Django-5.2.3-092E20?style=flat-square&logo=django&logoColor=white)
 ![DRF](https://img.shields.io/badge/DRF-3.16.1-red?style=flat-square)
 ![License](https://img.shields.io/badge/Lisans-MIT-green?style=flat-square)
-=======
-<h2 align="center">Ana Sayfa</h2>
-
-![HomePage](homepage.png)
---------
-<h2 align="center">Yönetim Paneli</h2>
- 
-![AdminPanel](adminpanel.png)
 
 ---
 
@@ -21,15 +13,94 @@
 
 | Bölüm | Açıklama |
 |---|---|
-| [✨ Özellikler](#-özellikler) | Sistemin sunduğu tüm özellikler |
+| [🎯 Problem](#-problem) | Projenin çözmeyi hedeflediği problem |
 | [🛠 Teknolojiler](#-teknolojiler) | Kullanılan kütüphane ve araçlar |
 | [📦 Kurulum](#-kurulum) | Yerel geliştirme ortamı kurulumu |
+| [✨ Özellikler](#-özellikler) | Sistemin sunduğu tüm özellikler |
 | [📖 API Dokümantasyonu](#-api-dokümantasyonu) | Swagger & Endpoint referansı |
 | [📁 Proje Yapısı](#-proje-yapısı) | Dizin ve dosya ağacı |
-| [🔧 Kullanım](#-kullanım) | Örnek istek ve yanıtlar |
 | [🔒 Güvenlik](#-güvenlik) | Rate limiting, CORS ve ortam değişkenleri |
 | [🚀 Production Deployment](#-production-deployment) | Canlı ortama geçiş rehberi |
-| [🎨 Frontend Entegrasyonu](#-frontend-entegrasyonu) | React frontend bağlantısı |
+
+---
+
+## 🎯 Problem
+
+Küçük ve orta ölçekli e-ticaret projelerinde, ürün/kategori/sepet/sipariş/ödeme gibi tekrar eden iş
+mantığını her seferinde sıfırdan kurmak zaman kaybına yol açar. Bu proje, bu ihtiyaca yönelik olarak
+kimlik doğrulama, ürün kataloğu, sepet, sipariş, kupon ve ödeme (iyzico) akışlarını tek bir **REST
+API** üzerinden sunan, herhangi bir istemciye (web, mobil, üçüncü parti entegrasyon) bağımsız olarak
+bağlanabilecek bir backend sağlar. Proje kasıtlı olarak sadece API katmanına odaklanır; bir arayüz
+(frontend) veya yönetim paneli (admin) içermez — tüketen taraf istediği istemciyi kendisi geliştirir.
+
+---
+
+## 🛠 Teknolojiler
+
+| Kategori | Paket | Versiyon |
+|---|---|---|
+| **Web Framework** | Django | 5.2.3 |
+| **REST API** | Django REST Framework | 3.16.1 |
+| **Authentication** | djangorestframework-simplejwt | 5.5.1 |
+| **API Docs** | drf-spectacular | 0.29.0 |
+| **Filtreleme** | django-filter | 25.2 |
+| **Ödeme** | iyzipay | 1.0.46 |
+| **API Key** | djangorestframework-api-key | 2.3.0 |
+| **CORS** | django-cors-headers | 4.9.0 |
+| **Görsel** | Pillow | 12.1.1 |
+| **Veritabanı** | SQLite3 *(dev)* / PostgreSQL *(prod)* | — |
+
+---
+
+## 📦 Kurulum
+
+### Ön Gereksinimler
+
+- Python **3.10** veya üzeri
+- `pip` paket yöneticisi
+- Virtual environment (önerilir)
+
+### Adım Adım Kurulum
+
+**1. Projeyi klonlayın**
+```bash
+git clone <repository-url>
+cd e-ticaret-api
+```
+
+**2. Virtual environment oluşturun ve aktive edin**
+```bash
+# Windows
+python -m venv .venv
+.venv\Scripts\activate
+
+# Linux / macOS
+python3 -m venv .venv
+source .venv/bin/activate
+```
+
+**3. Bağımlılıkları yükleyin**
+```bash
+pip install -r requirements.txt
+```
+
+**4. Veritabanı migrasyonlarını uygulayın**
+```bash
+python manage.py makemigrations
+python manage.py migrate
+```
+
+**5. Static dosyaları toplayın**
+```bash
+python manage.py collectstatic --noinput
+```
+
+**6. Sunucuyu başlatın**
+```bash
+python manage.py runserver
+```
+
+Uygulama `http://127.0.0.1:8000/` adresinde çalışacaktır.
 
 ---
 
@@ -92,96 +163,61 @@
 
 ---
 
-## 🛠 Teknolojiler
-
-| Kategori | Paket | Versiyon |
-|---|---|---|
-| **Web Framework** | Django | 5.2.3 |
-| **REST API** | Django REST Framework | 3.16.1 |
-| **Authentication** | djangorestframework-simplejwt | 5.5.1 |
-| **API Docs** | drf-spectacular | 0.29.0 |
-| **Filtreleme** | django-filter | 25.2 |
-| **Ödeme** | iyzipay | 1.0.46 |
-| **API Key** | djangorestframework-api-key | 2.3.0 |
-| **CORS** | django-cors-headers | 4.9.0 |
-| **Görsel** | Pillow | 12.1.1 |
-| **Veritabanı** | SQLite3 *(dev)* / PostgreSQL *(prod)* | — |
-
----
-
-## 📦 Kurulum
-
-### Ön Gereksinimler
-
-- Python **3.10** veya üzeri
-- `pip` paket yöneticisi
-- Virtual environment (önerilir)
-
-### Adım Adım Kurulum
-
-**1. Projeyi klonlayın**
-```bash
-git clone <repository-url>
-cd django-api
-```
-
-**2. Virtual environment oluşturun ve aktive edin**
-```bash
-# Windows
-python -m venv .venv
-.venv\Scripts\activate
-
-# Linux / macOS
-python3 -m venv .venv
-source .venv/bin/activate
-```
-
-**3. Bağımlılıkları yükleyin**
-```bash
-pip install -r requirements.txt
-```
-
-**4. Veritabanı migrasyonlarını uygulayın**
-```bash
-python manage.py makemigrations
-python manage.py migrate
-```
-
-**5. Superuser oluşturun**
-```bash
-python manage.py createsuperuser
-```
-
-**6. Static dosyaları toplayın**
-```bash
-python manage.py collectstatic --noinput
-```
-
-**7. Sunucuyu başlatın**
-```bash
-python manage.py runserver
-```
-
-Uygulama `http://127.0.0.1:8000/` adresinde çalışacaktır.
-
----
-
 ## 📖 API Dokümantasyonu
-
-Canlı Swagger dokümantasyonuna tarayıcıdan erişebilirsiniz:
 
 | Arayüz | URL |
 |---|---|
-| **Swagger UI** | [`/api/docs`](https://batuhanyilmaz1.pythonanywhere.com/api/docs) |
+| **Swagger UI** | `/api/docs` |
 | **ReDoc** | `/api/redoc` |
 | **OpenAPI Schema** | `/api/schema` |
+
+### Endpoint Referansı
+
+#### Ürünler
+
+| Metod | Endpoint | Yetki | Açıklama |
+|---|---|---|---|
+| `GET` | `/api/products/` | Herkese açık | Ürün listesi (filtre + arama) |
+| `GET` | `/api/products/{slug}/` | Herkese açık | Ürün detayı |
+| `POST` | `/api/products/admin/create/` | Yönetici rolü | Ürün oluşturma |
+| `PUT` | `/api/products/admin/{id}/` | Yönetici rolü | Ürün güncelleme |
+| `DELETE` | `/api/products/admin/{id}/` | Yönetici rolü | Ürün silme |
+| `POST` | `/api/products/admin/{id}/images/` | Yönetici rolü | Görsel yükleme |
+
+#### Sepet
+
+| Metod | Endpoint | Yetki | Açıklama |
+|---|---|---|---|
+| `GET` | `/api/cards/` | Kullanıcı | Sepeti görüntüle |
+| `POST` | `/api/cards/add/` | Kullanıcı | Sepete ürün ekle |
+| `PUT` | `/api/cards/items/{item_id}/` | Kullanıcı | Ürün miktarını güncelle |
+| `DELETE` | `/api/cards/items/{item_id}/` | Kullanıcı | Ürünü sepetten çıkar |
+
+#### Siparişler
+
+| Metod | Endpoint | Yetki | Açıklama |
+|---|---|---|---|
+| `GET` | `/api/orders/` | Kullanıcı | Siparişleri listele |
+| `POST` | `/api/orders/create/` | Kullanıcı | Sipariş oluştur |
+| `GET` | `/api/orders/{id}/` | Kullanıcı | Sipariş detayı |
+
+#### Yorumlar
+
+| Metod | Endpoint | Yetki | Açıklama |
+|---|---|---|---|
+| `GET` | `/api/comments/` | Herkese açık | Yorumları listele |
+| `POST` | `/api/comments/create/` | Kullanıcı | Yorum ekle |
+| `DELETE` | `/api/comments/{id}/` | Kullanıcı / Yönetici rolü | Yorum sil |
+
+> Rol bazlı yetkilendirme, JWT token içindeki kullanıcı rolüne göre yapılır; ayrı bir yönetim paneli
+> (Django admin) bulunmaz.
 
 ---
 
 ## 📁 Proje Yapısı
 
 ```
-django-api/
+e-ticaret-api/
 ├── 📁 app/                      # Ana proje ayarları
 │   ├── settings.py              # Django ayarları
 │   ├── urls.py                  # Ana URL yapılandırması
@@ -216,134 +252,6 @@ django-api/
 
 Her uygulama klasörü standart olarak şu dosyaları içerir:
 `models.py` · `serializers.py` · `views.py` · `urls.py` · `services.py`
-
----
-
-=======
-## 🔧 Kullanım
-
-### Kimlik Doğrulama
-
-<details>
-<summary><strong>Kullanıcı Kaydı</strong> — <code>POST /api/users/register/</code></summary>
-
-```json
-{
-    "username": "kullanici_adi",
-    "email": "email@example.com",
-    "password": "güçlü_şifre",
-    "password2": "güçlü_şifre",
-    "first_name": "Ad",
-    "last_name": "Soyad"
-}
-```
-</details>
-
-<details>
-<summary><strong>Giriş Yapma</strong> — <code>POST /api/users/login/</code></summary>
-
-**İstek:**
-```json
-{
-    "username": "kullanici_adi",
-    "password": "güçlü_şifre"
-}
-```
-
-**Yanıt:**
-```json
-{
-    "message": "Login successfull",
-    "token": {
-        "access": "eyJ0eXAiOiJKV1QiLCJhbGc...",
-        "refresh": "eyJ0eXAiOiJKV1QiLCJhbGc..."
-    },
-    "user": {
-        "id": 1,
-        "email": "user@example.com",
-        "first_name": "John",
-        "last_name": "Doe",
-        "role": "user"
-    }
-}
-```
-</details>
-
-<details>
-<summary><strong>Token Yenileme</strong> — <code>POST /api/users/token/refresh/</code></summary>
-
-```json
-{
-    "refresh": "eyJ0eXAiOiJKV1QiLCJhbGc..."
-}
-```
-</details>
-
----
-
-### Endpoint Referansı
-
-#### Ürünler
-
-| Metod | Endpoint | Yetki | Açıklama |
-|---|---|---|---|
-| `GET` | `/api/products/` | Herkese açık | Ürün listesi (filtre + arama) |
-| `GET` | `/api/products/{slug}/` | Herkese açık | Ürün detayı |
-| `POST` | `/api/products/admin/create/` | Admin | Ürün oluşturma |
-| `PUT` | `/api/products/admin/{id}/` | Admin | Ürün güncelleme |
-| `DELETE` | `/api/products/admin/{id}/` | Admin | Ürün silme |
-| `POST` | `/api/products/admin/{id}/images/` | Admin | Görsel yükleme |
-
-#### Sepet
-
-| Metod | Endpoint | Yetki | Açıklama |
-|---|---|---|---|
-| `GET` | `/api/cart/` | Kullanıcı | Sepeti görüntüle |
-| `POST` | `/api/cart/add/` | Kullanıcı | Sepete ürün ekle |
-| `PUT` | `/api/cart/items/{item_id}/` | Kullanıcı | Ürün miktarını güncelle |
-| `DELETE` | `/api/cart/items/{item_id}/` | Kullanıcı | Ürünü sepetten çıkar |
-
-#### Siparişler
-
-| Metod | Endpoint | Yetki | Açıklama |
-|---|---|---|---|
-| `GET` | `/api/orders/` | Kullanıcı | Siparişleri listele |
-| `POST` | `/api/orders/create/` | Kullanıcı | Sipariş oluştur |
-| `GET` | `/api/orders/{id}/` | Kullanıcı | Sipariş detayı |
-
-#### Yorumlar
-
-| Metod | Endpoint | Yetki | Açıklama |
-|---|---|---|---|
-| `GET` | `/api/comments/` | Herkese açık | Yorumları listele |
-| `POST` | `/api/comments/create/` | Kullanıcı | Yorum ekle |
-| `DELETE` | `/api/comments/{id}/` | Kullanıcı / Admin | Yorum sil |
-
-<details>
-<summary><strong>Sipariş oluşturma — örnek istek</strong></summary>
-
-```json
-// POST /api/orders/create/
-{
-    "delivery_address": 1,
-    "billing_address": 1,
-    "coupon_code": "INDIRIM20"
-}
-```
-</details>
-
-<details>
-<summary><strong>Yorum ekleme — örnek istek</strong></summary>
-
-```json
-// POST /api/comments/create/
-{
-    "product": 1,
-    "text": "Harika bir ürün!",
-    "rating": 5
-}
-```
-</details>
 
 ---
 
@@ -438,119 +346,6 @@ CSRF_COOKIE_SECURE = True
 # 5. Static dosyaları topla
 python manage.py collectstatic
 ```
-
----
-
-## 🎨 Frontend Entegrasyonu
-
-Bu proje **React** tabanlı bir frontend ile entegre edilmiştir.
-Detaylar için: [`FRONTEND/frontend_for_website/README_INTEGRATION.md`](./FRONTEND/frontend_for_website/README_INTEGRATION.md)
-
-### Tamamlanan Entegrasyonlar
-
-| Alan | Durum |
-|---|---|
-| API Service Katmanı (tüm endpoint'ler) | ✅ |
-| Otomatik JWT token yenileme | ✅ |
-| Request / Response interceptors | ✅ |
-| Gelişmiş hata yönetimi | ✅ |
-| JWT kimlik doğrulama | ✅ |
-| Persistent auth (localStorage) | ✅ |
-| Admin / User rol yönetimi | ✅ |
-| Login & Register sayfaları | ✅ |
-| Ürün listesi (filtreleme + sıralama) | ✅ |
-| Ürün detay sayfası | ✅ |
-| Sepet sayfası | ⏳ Backend hazır |
-| Checkout sayfası | ⏳ Backend hazır |
-| Kullanıcı paneli | ⏳ Backend hazır |
-
-### Düzeltilen Endpoint Eşleşmeleri
-
-```
-❌ /auth/register  →  ✅ /api/users/signup
-❌ /auth/login     →  ✅ /api/users/login
-❌ /cart/*         →  ✅ /api/cards/*
-```
-
-### Frontend Kurulum
-
-```bash
-cd FRONTEND/frontend_for_website
-npm install
-npm start
-```
-
-```env
-# .env
-REACT_APP_BACKEND_URL=http://localhost:8000
-```
-
-### Kullanım Örnekleri
-
-<details>
-<summary><strong>Authentication (useAuth hook)</strong></summary>
-
-```javascript
-import { useAuth } from '@/context/AuthContext';
-
-const { login, register, user } = useAuth();
-
-await register({
-  first_name: 'John',
-  last_name: 'Doe',
-  email: 'john@example.com',
-  phone: '05551234567',
-  password: 'SecurePass123',
-  password2: 'SecurePass123'
-});
-
-await login('john@example.com', 'SecurePass123');
-```
-</details>
-
-<details>
-<summary><strong>Sepet İşlemleri (useCart hook)</strong></summary>
-
-```javascript
-import { useCart } from '@/context/CartContext';
-
-const { addToCart, cart, cartCount } = useCart();
-
-await addToCart(productId, 2);
-console.log(cartCount); // 2
-```
-</details>
-
-<details>
-<summary><strong>API Servisleri</strong></summary>
-
-```javascript
-import { productService, categoryService } from '@/lib/api';
-
-const products = await productService.getAll({
-  category: 1,
-  sort_by: 'price_asc',
-  min_price: 100,
-  max_price: 500,
-  in_stock: true
-});
-
-const categories = await categoryService.getAll();
-```
-</details>
-
-### Backend İyileştirme Gereksinimleri
-
-Frontend'in tam performans gösterebilmesi için gerekli değişiklikler:
-[`FRONTEND/frontend_for_website/BACKEND_CHANGES_REQUIRED.md`](./FRONTEND/frontend_for_website/BACKEND_CHANGES_REQUIRED.md)
-
-| Alan | Gerekli Değişiklik |
-|---|---|
-| Product model | `original_price`, `featured`, `created_at` alanları |
-| Category model | `slug`, `image` alanları |
-| Serializers | `category_name`, `category_id`, `product_count`, `images[].url` |
-| Product filtering | `featured`, `category`, `price_range`, `in_stock`, `search` |
-| Response format | Standartlaştırma |
 
 ---
 
