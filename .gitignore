@@ -1,0 +1,5 @@
+.env
+.venv/
+logs.txt
+logs/django.log
+__pycache__/

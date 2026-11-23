@@ -22,11 +22,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = "django-insecure-_anr8hw_#wm@3y%412ymwz*n#hw1+hl_whq4&(x*ekfj^$-wr*"
+SECRET_KEY = os.environ.get("SECRET_KEY")
 
-DEBUG = True
+DEBUG = os.environ.get("DEBUG")
 
-ALLOWED_HOSTS = ['batuhanyilmaz1.pythonanywhere.com', '127.0.0.1', 'localhost']
+ALLOWED_HOSTS = os.environ.get("ALLOWED_HOSTS", "").split(",")
 
 # Application definition
 
@@ -73,15 +73,10 @@ REST_FRAMEWORK = {
     # 'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
     # 'PAGE_SIZE': 3
 
-    # 'DEFAULT_THROTTLE_CLASSES': [
-    #     # 'rest_framework.throttling.AnonRateThrottle',
-    #     # 'rest_framework.throttling.UserRateThrottle'
-    #     'app.throttles.MinUserRateThrottle',
-    #     'app.throttles.MaxUserRateThrottle',
-    #     'app.throttles.MinAnonRateThrottle',
-    #     'app.throttles.MaxAnonRateThrottle',
-    #     'app.throttles.MaxUserRateThrottleMinute',
-    # ],
+    'DEFAULT_THROTTLE_CLASSES': [
+        'rest_framework.throttling.AnonRateThrottle',
+        'rest_framework.throttling.UserRateThrottle'
+     ],
 
     # 'DEFAULT_THROTTLE_RATES': {
     #     # 'anon': '100/day',
@@ -228,9 +223,9 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 AUTH_USER_MODEL = 'users.CustomUser'
 
 # Development
-IYZICO_API_KEY = "sandbox-N4a3HCR5IvxrCqSTZ3IaQfJUPTFju3cA"
-IYZICO_SECRET_KEY = "sandbox-G4kaJmcj7L1g229N2eSXrUQ0fQ6lvEqa"
-IYZICO_BASE_URL = "sandbox-api.iyzipay.com"
+IYZICO_API_KEY = os.environ.get("IYZICO_API_KEY")
+IYZICO_SECRET_KEY = os.environ.get("IYZICO_SECRET_KEY")
+IYZICO_BASE_URL = os.environ.get("IYZICO_BASE_URL")
 
 # Upload
 MEDIA_URL = '/media/'
