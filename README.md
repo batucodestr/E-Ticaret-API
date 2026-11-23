@@ -90,12 +90,7 @@ python manage.py makemigrations
 python manage.py migrate
 ```
 
-**5. Static dosyaları toplayın**
-```bash
-python manage.py collectstatic --noinput
-```
-
-**6. Sunucuyu başlatın**
+**5. Sunucuyu başlatın**
 ```bash
 python manage.py runserver
 ```
@@ -279,7 +274,7 @@ CORS_ALLOWED_ORIGINS = [
 ### Ortam Değişkenleri
 
 ```python
-# settings.py — production ayarları
+.env
 DEBUG = False
 SECRET_KEY = "production-secret-key"
 ALLOWED_HOSTS = ["yourdomain.com"]
@@ -299,53 +294,6 @@ Loglar `logs/django.log` dosyasında saklanır:
 | `WARNING` | Uyarılar |
 | `ERROR` | Hatalar |
 | `CRITICAL` | Kritik hatalar |
-
----
-
-## 🧪 Test
-
-```bash
-# Tüm testleri çalıştır
-python manage.py test
-
-# Belirli bir uygulama için
-python manage.py test products
-```
-
----
-
-## 🚀 Production Deployment
-
-```python
-# 1. Debug modunu kapat
-DEBUG = False
-
-# 2. Güçlü secret key üret
-import secrets
-SECRET_KEY = secrets.token_urlsafe(50)
-
-# 3. PostgreSQL yapılandır
-DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.postgresql",
-        "NAME": "your_db_name",
-        "USER": "your_db_user",
-        "PASSWORD": "your_db_password",
-        "HOST": "localhost",
-        "PORT": "5432",
-    }
-}
-
-# 4. HTTPS güvenlik ayarları
-SECURE_SSL_REDIRECT = True
-SESSION_COOKIE_SECURE = True
-CSRF_COOKIE_SECURE = True
-```
-
-```bash
-# 5. Static dosyaları topla
-python manage.py collectstatic
-```
 
 ---
 
