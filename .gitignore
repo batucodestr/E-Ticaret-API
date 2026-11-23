@@ -3,3 +3,4 @@
 logs.txt
 logs/django.log
 __pycache__/
+*.pyc
